@@ -1,0 +1,20 @@
+{
+    "brand": [
+        {
+            "name": "Puma",
+            "image": " client\/assets\/img\/products\/Puma.png"
+        },
+        {
+            "name": "Adidas",
+            "image": " client\/assets\/img\/products\/Adidas.png"
+        },
+        {
+            "name": "Nike",
+            "image": " client\/assets\/img\/products\/Nike.png"
+        },
+        {
+            "name": "Lacoste",
+            "image": " client\/assets\/img\/products\/Lacoste.png"
+        }
+    ]
+}
