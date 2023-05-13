@@ -5,13 +5,14 @@ import { notAuth } from '../middlewares/handleError'
 
 const hashPass = password =>bcrypt.hashSync(password, bcrypt.genSaltSync(8))
 
-export const register = ({email, password}) => new Promise( async(resolve, reject) => {
+export const register = ({email, password,name}) => new Promise( async(resolve, reject) => {
     try {
         const response = await db.User.findOrCreate({
             where:{email},
             defaults: {
                 email,
-                password: hashPass(password)
+                password: hashPass(password),
+                name
             }
         })
         const accessToken = response[1]? jwt.sign({id: response[0].id, email: response[0].email, role: response[0].role}, process.env.JWT_SECRET, {expiresIn: '5s'}) :null

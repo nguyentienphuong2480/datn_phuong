@@ -2,6 +2,7 @@ class Api{
     static url = "http://localhost:4000/api/v1/";
 
     static Login = this.url + 'auth/login'
+    static Register = this.url + 'auth/register'
     static User = this.url + 'user/'
     static AllUser = this.url + 'user/list'
 

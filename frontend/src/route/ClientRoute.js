@@ -6,6 +6,7 @@ import ProductPage from '../client/page/ProductPage'
 import Search from '../client/orther/Search'
 import ProductBrandPage from '../client/page/ProductBrandPage'
 import Login from '../client/orther/Login'
+import Register from '../client/orther/Register'
 
 function ClientRoute() {
     return (
@@ -18,6 +19,7 @@ function ClientRoute() {
                 <Route path='/product' element={<ProductPage />} ></Route>
                 <Route path='/productbrand/:id' element={<ProductBrandPage/>}></Route>
                 <Route path='/login' element={<Login/>}></Route>
+                <Route path='/register' element={<Register/>}></Route>
             </Routes>
         </>
     );

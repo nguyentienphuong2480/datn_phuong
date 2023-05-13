@@ -2,31 +2,37 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Products', {
+    await queryInterface.createTable('Users', {
       id: {
         allowNull: false,
+        autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       name: {
         type: Sequelize.STRING
       },
-      brand: {
-        type: Sequelize.TINYINT
-      },
-      image: {
+      phone: {
         type: Sequelize.STRING
       },
-      price: {
-        type: Sequelize.FLOAT
+      address:{
+        type: Sequelize.STRING
       },
-      status: {
-        type: Sequelize.TINYINT,
-        defaultValue: 1
+      email: {
+        type: Sequelize.STRING
       },
-      trash: {
-        type: Sequelize.TINYINT,
-        defaultValue: 0
+      password: {
+        type: Sequelize.STRING
+      },
+      avatar: {
+        type: Sequelize.STRING
+      },
+      role: {
+        type: Sequelize.STRING,
+        defaultValue: 'R2'
+      },
+      refreshToken: {
+        type: Sequelize.STRING
       },
       createdAt: {
         type: 'DATETIME',
@@ -39,6 +45,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Products');
+    await queryInterface.dropTable('Users');
   }
 };
