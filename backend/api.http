@@ -56,4 +56,6 @@ GET http://localhost:4000/api/v1/insert/productdetail
 ###
 GET http://localhost:4000/api/v1/user/list
 ###
-GET  http://localhost:4000/api/v1/auth/google
+GET http://localhost:4000/api/v1/auth/google
+###
+GET https://provinces.open-api.vn/api/

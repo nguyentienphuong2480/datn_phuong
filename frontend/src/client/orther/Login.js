@@ -1,16 +1,14 @@
 import React, {  useState} from 'react'
 import { Link,useNavigate } from 'react-router-dom';
-import Register from './Register'
 import { ToastContainer, toast } from 'react-toastify'
 import axios from 'axios'
 import Api from "../../api/Api"
 
 export default function Login() {
+    var user ={}
     const navigate = useNavigate();
-    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState();
-    const [password_confirm, setPassword_confirm] = useState();
     const SignUp = (e) => {       
         const container = document.getElementById('container');
         container.classList.add("right-panel-active");
@@ -18,17 +16,62 @@ export default function Login() {
             navigate('/register')
         },500)
     }
+    const btnLogin = () => {
+        var data = JSON.stringify({
+          "email": email,
+          "password": password
+        });
+        var config = {
+          method: 'post',
+          url: Api.Login,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          data: data
+        };
+        axios(config)
+          .then(res => {
+            user = res.data
+            if (user.err) toast(user.mes)
+            else {
+              localStorage.setItem('accessToken', user.accessToken);
+              var check = {
+                method: 'get',
+                url: Api.User,
+                headers: {
+                  Authorization: user.accessToken
+                }
+              }
+              axios(check)
+                .then(res => {
+                  toast('Logged in successfully')
+                  setTimeout(() => {
+    
+                    (res.data.userData.roleData.code === 'R1') ? navigate('/admin') : navigate('/')
+                  }, 6000)
+    
+    
+                })
+                .catch(err => console.log(err))
+            }
+          })
+          .catch(err => {
+            console.log(err)
+            toast(err.response.data.mes)
+          });
+      }
+      
     return (
         <div className='login'>
             <div className="wrap" id="container">
                 <div className="form-container sign-in-container">
-                    <form className='form-login'>
+                    <div className='form-login'>
                         <h1>Đăng nhập</h1>
                         <input className='input-login' onChange={e=>setEmail(e.target.value)} type="email" placeholder="Email" />
                         <input className='input-login' onChange={e=>setPassword(e.target.value)} type="password" placeholder="Mật khẩu" />
                         <a className='social' href="/">Quên mật khẩu</a>
-                        <button className='btn-login'>Đăng nhập</button>
-                    </form>
+                        <button onClick={btnLogin} className='btn-login'>Đăng nhập</button>
+                    </div>
                 </div>
                 <div className="overlay-container">
                     <div className="overlay">

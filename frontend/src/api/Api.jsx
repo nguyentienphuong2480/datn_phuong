@@ -30,9 +30,6 @@ class Api{
     static GetOneCategory=(id) =>{return this.url + "category/getOneCategory/" +id};
     static EditCategory = this.url + "category/editCategory";
 
-
-    static SubCategory = this.url + "subcategory/";
-
     static Cart = this.url + "cart/";
     static AddCart = this.url + "cart/";
     static DeleteCart = this.url + "cart/";

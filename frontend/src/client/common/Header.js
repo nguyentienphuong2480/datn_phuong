@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export default function Header() {
+    const navigate = useNavigate()
+    const Logout = () =>{
+        localStorage.removeItem('accessToken')
+        navigate('/')
+    }
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light shadow">
@@ -34,21 +39,17 @@ export default function Header() {
                             <Link className="nav-icon d-none d-lg-inline" data-bs-toggle="modal" data-bs-target="#search">
                                 <i className="fa fa-fw fa-search text-dark mr-2"></i>
                             </Link>
-                            <a className="nav-icon position-relative text-decoration-none" href="/">
+                            <Link to='/cart' className="nav-icon position-relative text-decoration-none">
                                 <i className="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                                {/* <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> */}
-                            </a>
-                            <a className="nav-icon position-relative text-decoration-none" href="/">
-                                <div className="dropdown">
-                                    <i className="fa fa-fw fa-user text-dark mr-3 dropbtn"></i>
-                                    <div className="dropdown-content">
-                                        <Link>Tài khoản</Link>
-                                        <Link>Đơn hàng</Link>
-                                        <Link to='/login'>Đăng nhập</Link>
-                                    </div>
-                                </div>
-                                {/* <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> */}
-                            </a>
+                            </Link>
+                            <Link className="nav-icon position-relative text-decoration-none">
+                                <i className="fa fa-fw fa-user text-dark mr-3 dropbtn"></i>
+                            </Link>
+                            {
+                                !localStorage.accessToken?<Link to='/login' className="nav-icon position-relative text-decoration-none">Đăng nhập | Đăng ký</Link>:
+                                <Link onClick={Logout} className="nav-icon position-relative text-decoration-none">Đăng xuất</Link>
+                            }
+                            
                         </div>
                     </div>
 
