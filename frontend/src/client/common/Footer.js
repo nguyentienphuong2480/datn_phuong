@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -15,11 +16,11 @@ export default function Footer() {
                             </li>
                             <li>
                                 <i className="fa fa-phone fa-fw"></i>
-                                <a className="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                                <Link className="text-decoration-none" href="tel:010-020-0340">010-020-0340</Link>
                             </li>
                             <li>
                                 <i className="fa fa-envelope fa-fw"></i>
-                                <a className="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                                <Link className="text-decoration-none" href="mailto:info@company.com">info@company.com</Link>
                             </li>
                         </ul>
                     </div>
@@ -27,24 +28,24 @@ export default function Footer() {
                     <div className="col-md-4 pt-5">
                         <h2 className="h2 text-light border-bottom pb-3 border-light">Products</h2>
                         <ul className="list-unstyled text-light footer-link-list">
-                            <li><a className="text-decoration-none" href="/">Luxury</a></li>
-                            <li><a className="text-decoration-none" href="/">Sport Wear</a></li>
-                            <li><a className="text-decoration-none" href="/">Men's Shoes</a></li>
-                            <li><a className="text-decoration-none" href="/">Women's Shoes</a></li>
-                            <li><a className="text-decoration-none" href="/">Popular Dress</a></li>
-                            <li><a className="text-decoration-none" href="/">Gym Accessories</a></li>
-                            <li><a className="text-decoration-none" href="/">Sport Shoes</a></li>
+                            <li><Link className="text-decoration-none" href="/">Luxury</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Sport Wear</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Men's Shoes</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Women's Shoes</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Popular Dress</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Gym Accessories</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Sport Shoes</Link></li>
                         </ul>
                     </div>
 
                     <div className="col-md-4 pt-5">
                         <h2 className="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                         <ul className="list-unstyled text-light footer-link-list">
-                            <li><a className="text-decoration-none" href="/">Home</a></li>
-                            <li><a className="text-decoration-none" href="/">About Us</a></li>
-                            <li><a className="text-decoration-none" href="/">Shop Locations</a></li>
-                            <li><a className="text-decoration-none" href="/">FAQs</a></li>
-                            <li><a className="text-decoration-none" href="/">Contact</a></li>
+                            <li><Link className="text-decoration-none" href="/">Home</Link></li>
+                            <li><Link className="text-decoration-none" href="/">About Us</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Shop Locations</Link></li>
+                            <li><Link className="text-decoration-none" href="/">FAQs</Link></li>
+                            <li><Link className="text-decoration-none" href="/">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -57,16 +58,16 @@ export default function Footer() {
                     <div className="col-auto me-auto">
                         <ul className="list-inline text-left footer-icons">
                             <li className="list-inline-item border border-light rounded-circle text-center">
-                                <a className="text-light text-decoration-none"  rel="noreferrer" target="_blank" href="http://facebook.com/"><i className="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                                <Link className="text-light text-decoration-none"  rel="noreferrer" target="_blank" href="http://facebook.com/"><i className="fab fa-facebook-f fa-lg fa-fw"></i></Link>
                             </li>
                             <li className="list-inline-item border border-light rounded-circle text-center">
-                                <a className="text-light text-decoration-none" rel="noreferrer" target="_blank" href="https://www.instagram.com/"><i className="fab fa-instagram fa-lg fa-fw"></i></a>
+                                <Link className="text-light text-decoration-none" rel="noreferrer" target="_blank" href="https://www.instagram.com/"><i className="fab fa-instagram fa-lg fa-fw"></i></Link>
                             </li>
                             <li className="list-inline-item border border-light rounded-circle text-center">
-                                <a className="text-light text-decoration-none" rel="noreferrer" target="_blank" href="https://twitter.com/"><i className="fab fa-twitter fa-lg fa-fw"></i></a>
+                                <Link className="text-light text-decoration-none" rel="noreferrer" target="_blank" href="https://twitter.com/"><i className="fab fa-twitter fa-lg fa-fw"></i></Link>
                             </li>
                             <li className="list-inline-item border border-light rounded-circle text-center">
-                                <a className="text-light text-decoration-none" rel="noreferrer" target="_blank" href="https://www.linkedin.com/"><i className="fab fa-linkedin fa-lg fa-fw"></i></a>
+                                <Link className="text-light text-decoration-none" rel="noreferrer" target="_blank" href="https://www.linkedin.com/"><i className="fab fa-linkedin fa-lg fa-fw"></i></Link>
                             </li>
                         </ul>
                     </div>

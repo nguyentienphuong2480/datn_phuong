@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 export default function Brand() {
     return (
@@ -24,40 +25,40 @@ export default function Brand() {
                                         <div className="carousel-item active">
                                             <div className="row">
                                                 <div className="col-3 p-md-5">
-                                                    <a href="/">
+                                                    <Link href="/">
                                                         <img
                                                             className="img-fluid brand-img"
                                                             src="client/assets/img/Adidas.png"
                                                             alt="Brand Logo"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <div className="col-3 p-md-5">
-                                                    <a href="/">
+                                                    <Link href="/">
                                                         <img
                                                             className="img-fluid brand-img"
                                                             src="client/assets/img/Nike.png"
                                                             alt="Brand Logo"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <div className="col-3 p-md-5">
-                                                    <a href="/">
+                                                    <Link href="/">
                                                         <img
                                                             className="img-fluid brand-img"
                                                             src="client/assets/img/Puma.png"
                                                             alt="Brand Logo"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <div className="col-3 p-md-5">
-                                                    <a href="/">
+                                                    <Link href="/">
                                                         <img
                                                             className="img-fluid brand-img"
                                                             src="client/assets/img/Lacoste.png"
                                                             alt="Brand Logo"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
