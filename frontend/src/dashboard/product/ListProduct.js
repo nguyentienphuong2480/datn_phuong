@@ -89,32 +89,31 @@ function ListProduct() {
         //     <ToastContainer />
         // </div>
         <div className="container-fluid">
-            <h1 className="h3 mb-2 text-gray-800">Tables</h1>
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
-                    <h6 className="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                    <h6 className="m-0 font-weight-bold text-primary">Danh sách sản phẩm</h6>
                 </div>
                 <div className="card-body">
                     <div className="table-responsive">
                         <table className="table table-bordered" width="100%" cellSpacing={0}>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
+                                    <th>ID</th>
+                                    <th>Tên</th>
+                                    <th className="w-25">Hình ảnh</th>
+                                    <th>Thương hiệu</th>
+                                    <th>Giá</th>
                                     <th>Salary</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Salary</th>
+                                    <th className='w-auto'>ID</th>
+                                    <th className='w-auto'>Tên</th>
+                                    <th className='w-auto'>Hình ảnh</th>
+                                    <th className='w-auto'>Thương hiệu</th>
+                                    <th className='w-auto'>Giá</th>
+                                    <th className='w-auto'>Salary</th>
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -124,12 +123,12 @@ function ListProduct() {
                                             <tr key={item.id}>
                                                 <td>{item.id}</td>
                                                 <td>{item.name}</td>
-                                                <td>{item.brandData.name}</td>
                                                 <td>
-                                                    <img src={item.image}/>
+                                                    <img className="w-50" src={item.image} alt=""/>
                                                 </td>
+                                                <td>{item.brandData.name}</td>
                                                 <td>{item.price}</td>
-                                                <td>{item.name}</td>
+                                                <td></td>
                                             </tr>
                                         )
                                     })
