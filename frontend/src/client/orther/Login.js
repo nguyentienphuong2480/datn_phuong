@@ -44,7 +44,7 @@ export default function Login() {
               }
               axios(check)
                 .then(res => {
-                  toast('Logged in successfully')
+                  toast('Đăng nhập thành công')
                   setTimeout(() => {
     
                     (res.data.userData.roleData.code === 'R1') ? navigate('/admin') : navigate('/')

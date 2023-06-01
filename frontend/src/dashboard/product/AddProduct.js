@@ -18,6 +18,16 @@ export default function AddProduct() {
     const [description, setDescription] = useState('');
     const [subcategorys, setSubcategorys] = useState();
     const [brands, setBrands] = useState();
+    const [imgSrc, setImgSrc] = useState("");
+
+    function handleOnChange(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            setImgSrc(reader.result);
+        };
+    }
     const HandleSave = () => {
         const data = new FormData()
         data.append('name', name)
@@ -55,10 +65,47 @@ export default function AddProduct() {
             .catch(err => console.log(err))
 
     }
+    // window.addEventListener("load", previewImages());
+    const previewImages = () => {
+        const fileInput = document.getElementById("myFileInput");
+        const imageContainer = document.getElementById("imagePreview");
+
+        
+        // Xóa hình ảnh cũ trong container
+        if (imageContainer) imageContainer.innerHTML = "";
+
+        // Lấy danh sách các tập tin được chọn
+        const files = fileInput && fileInput.files;
+
+
+        // Lặp qua từng tập tin và thêm ảnh vào container
+        for (let i = 0; i < files && files.length; i++) {
+            const file = files[i];
+            
+
+            // Kiểm tra xem tệp tin có phải là hình ảnh hay không
+            if (!file.type.startsWith("image/*")) {
+
+                continue;
+            }
+
+            // Tạo một đối tượng URL để truy cập URL của tệp
+            const imageURL = URL.createObjectURL(file);
+
+
+            // Tạo một thẻ img mới và thêm đường dẫn URL vào thuộc tính src của nó
+            const imageElement = document.createElement("img");
+            imageElement.src = imageURL;
+            console.log(imageElement)
+            // Thêm thẻ img vào container
+            imageContainer.appendChild(imageElement);
+        }
+    }
+
+    // Gọi hàm previewImages()
     useEffect(() => {
         loadData()
     }, []);
-    console.log(image)
     return (
         <div className="container-fluid">
             <div className="card shadow mb-4">
@@ -86,12 +133,13 @@ export default function AddProduct() {
                         <div className="form-group row">
                             <div className="col-sm-6 mb-3 mb-sm-0">
                                 <label>Ảnh chính</label>
-                                <input type="file" onChange={e => setImage(e.target.files)} className="form-control " placeholder="Ảnh chính" />
-                                <img alt='' src={image[0].name}/>
+                                <input type="file" accept="image/*" onChange={handleOnChange} />
+                                {imgSrc && <img src={imgSrc} alt="selected" />}
                             </div>
                             <div className="col-sm-6">
                                 <label>Ảnh liên quan</label>
-                                <input type="file" onChange={e => setImages(e.target.files)} className="form-control " multiple placeholder="Ảnh liên quan" />
+                                <input type="file" accept="image/*" id="myFileInput" onChange={previewImages} multiple />
+                                <div id="imagePreview" ></div>
                             </div>
                         </div>
                         <div className="form-group row">
@@ -99,7 +147,7 @@ export default function AddProduct() {
                                 <input type="password" className="form-control " placeholder="Giá" />
                             </div>
                             <div className="col-sm-6">
-                                <input type="text" className="form-control"  placeholder="Mô tả sản phẩm" />
+                                <input type="text" className="form-control" placeholder="Mô tả sản phẩm" />
                             </div>
                         </div>
                         <Link className="btn btn-primary btn-block">

@@ -41,14 +41,22 @@ export const getProductBrand = (brand) => new Promise(async (resolve, reject) =>
 
 export const getProductDetail = (id) => new Promise(async (resolve, reject) => {
     try {
-        const response = await db.ProductDetail.findOne({
+        const detail = await db.ProductDetail.findOne({
             where: [{ id: id }],
             raw: true
+        })
+        const response = await db.Product.findOne({
+            where:[{id:id}],
+            include: [
+                { model: db.Brand, as: 'brandData', attributes: ['id', 'name'] }
+            ],
+            // raw:true
         })
         resolve({
             err: 0,
             mes: 'Got',
-            productData: response
+            productData: response,
+            detail: detail
         })
     } catch (error) {
         reject(error)

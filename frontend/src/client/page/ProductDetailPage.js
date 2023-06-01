@@ -5,10 +5,11 @@ import ProductDetail from '../product/ProductDetail'
 import { useParams } from 'react-router-dom'
 
 export default function ProductDetailPage() {
+    const id = useParams()
     return (
         <>
         <Header/>
-        <ProductDetail/>
+        <ProductDetail id={id.id}/>
         <Footer/>
         </>
     )

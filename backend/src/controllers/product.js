@@ -26,7 +26,6 @@ export const getProductBrand = async (req, res)=>{
 export const getProDetail = async (req, res)=>{
     try {
         const id = req.params.id
-        console.log(id)
         const response = await services.getProductDetail(id)
         return res.status(200).json(response)
     } catch (error) {

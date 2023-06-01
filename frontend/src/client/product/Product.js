@@ -92,7 +92,7 @@ export default function Product() {
                         <img className="card-img rounded-0 img-fluid" src={product.image} alt="" />
                         <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                           <ul className="list-unstyled">
-                            <li><a className="btn btn-success text-white mt-2" href="shop-single.html"><i className="far fa-eye"></i></a></li>
+                            <li><Link to={'/productdetail/' + product.id} className="btn btn-success text-white mt-2"><i className="far fa-eye"></i></Link></li>
                             <li><Link onClick={e=>AddToCart(e, product.id)} className="btn btn-success text-white mt-2"><i className="fas fa-cart-plus"></i></Link></li>
                           </ul>
                         </div>

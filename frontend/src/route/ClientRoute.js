@@ -8,6 +8,7 @@ import ProductBrandPage from '../client/page/ProductBrandPage'
 import Login from '../client/orther/Login'
 import Register from '../client/orther/Register'
 import CartPage from '../client/page/CartPage'
+import ProductDetailPage from '../client/page/ProductDetailPage'
 
 function ClientRoute() {
     return (
@@ -21,6 +22,7 @@ function ClientRoute() {
                 <Route path='/login' element={<Login/>}></Route>
                 <Route path='/register' element={<Register/>}></Route>
                 <Route path='/cart' element={<CartPage/>}></Route>
+                <Route path='/productdetail/:id' element={<ProductDetailPage/>}></Route>
             </Routes>
         </>
     );
