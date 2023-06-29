@@ -44,23 +44,24 @@ function ListBrand() {
     useEffect(() => {
         loadData()
     }, [brand?.length]);
+    console.log(brand)
     return (
-        <div className="content-wrapper">
-            <div className="container-xxl flex-grow-1 container-p-y">
-                <Link to='/dashboard/addBrand'><input type="button" value="Add" /></Link>
-                <Link to='/dashboard/trashBrand'><input type="button" value="Trash" /></Link>
-
-                {
-                    (brand?.length) ? (
-                        <table className="admin-main border w-100">
+        <div className="container-fluid">
+            <div className="card shadow mb-4">
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Danh sách thương hiệu</h6>
+                </div>
+                <div className="card-body">
+                    <div className="table-responsive">
+                        <table className="table table-bordered" width="100%" cellSpacing={0}>
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Image</th>
-                                    <th>CreateAt</th>
-                                    <th>UpdateAt</th>
-                                    <th>Act</th>
+                                    <th>Tên</th>
+                                    <th className="w-25">Hình ảnh</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Ngày cập nhật</th>
+                                    <th>Chức năng</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -71,15 +72,15 @@ function ListBrand() {
                                                 <td>{item.id}</td>
                                                 <td>{item.name}</td>
                                                 <td>
-                                                    <img className="img-admin" src={item.image} alt="" />
+                                                    <img className="w-50" src={item.image} alt=""/>
                                                 </td>
                                                 <td>{item.createdAt}</td>
                                                 <td>{item.updatedAt}</td>
                                                 <td>
-                                                    <input onClick={e => { ChangeTrashBrand(e, item.id) }} type="button" value="Xóa" />
-                                                    <Link to={'/admin/editBrand/' + item.id}>
-                                                        <input type="button" value="Sửa" />
-                                                    </Link>
+                                                <input style={{margin: '0 10px'}} onClick={e => { ChangeTrashBrand(e, item.id) }} type="button" value="Xóa" />
+                                                     <Link to={'/dashboard/editBrand/' + item.id}>
+                                                         <input type="button" value="Sửa" />
+                                                     </Link>
                                                 </td>
                                             </tr>
                                         )
@@ -87,11 +88,10 @@ function ListBrand() {
                                 }
                             </tbody>
                         </table>
-                    ) : null
-                }
+                    </div>
+                </div>
             </div>
-            <div className="content-backdrop fade" />
-            <ToastContainer />
+            <ToastContainer/>
         </div>
     )
 }

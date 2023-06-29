@@ -39,55 +39,60 @@ export const getProductBrand = (brand) => new Promise(async (resolve, reject) =>
     }
 })
 
-export const getProductDetail = (id) => new Promise(async (resolve, reject) => {
-    try {
-        const detail = await db.ProductDetail.findOne({
-            where: [{ id: id }],
-            raw: true
-        })
-        const response = await db.Product.findOne({
-            where:[{id:id}],
-            include: [
-                { model: db.Brand, as: 'brandData', attributes: ['id', 'name'] }
-            ],
-            // raw:true
-        })
-        resolve({
-            err: 0,
-            mes: 'Got',
-            productData: response,
-            detail: detail
-        })
-    } catch (error) {
-        reject(error)
-    }
-})
+// export const getProductDetail = (id) => new Promise(async (resolve, reject) => {
+//     try {
+//         const detail = await db.ProductDetail.findOne({
+//             where: [{ id: id }],
+//             raw: true
+//         })
+//         const response = await db.Product.findOne({
+//             where:[{id:id}],
+//             include: [
+//                 { model: db.Brand, as: 'brandData', attributes: ['id', 'name'] }
+//             ],
+//             // raw:true
+//         })
+//         resolve({
+//             err: 0,
+//             mes: 'Got',
+//             productData: response,
+//             detail: detail
+//         })
+//     } catch (error) {
+//         reject(error)
+//     }
+// })
 
-export const creataProduct = (body, fileData) => new Promise(async (resolve, reject) => {
+export const createProduct = (body, fileData) => new Promise(async (resolve, reject) => {
     try {
         const response = await db.Product.findOrCreate({
             where: { name: body.name },
             defaults: {
                 ...body,
+                id: Math.random().toString(36).substring(2, 8),
                 image: fileData?.path,
                 filename: fileData.filename
             }
-        })
+        });
         resolve({
             err: response[1] ? 0 : 1,
-            mes: response[1] ? 'Created' : 'Product already exists',
-        })
-        if (fileData && !response[1]) cloudinary.uploader.destroy(fileData.filename)
+            mes: response[1] ? 'Thêm thành công' : 'Sản phẩm đã có sẵn',
+        });
+        if (fileData && !response[1]) cloudinary.uploader.destroy(fileData.filename);
     } catch (error) {
-        reject(error)
-        if (fileData) cloudinary.uploader.destroy(fileData.filename)
+        reject(error);
+        if (fileData) cloudinary.uploader.destroy(fileData.filename);
     }
-})
+});
+
 
 export const getOneProduct = (id) => new Promise(async (resolve, reject) => {
     try {
         const response = await db.Product.findOne({
-            where: { id: id }
+            where: { id: id },
+            include:[
+                { model: db.Brand, as: 'brandData', attributes: ['id', 'name'] }
+            ]
         })
         resolve({
             err: 0,
@@ -177,9 +182,39 @@ export const deleteProduct = (ids, filename) => new Promise(async (resolve, reje
         })
         resolve({
             err: response > 0 ? 0 : 1,
-            mes: `${response} book(s) deteted`
+            mes: `${response} đã xoá`
         })
         cloudinary.api.delete_resources(filename)
+    } catch (error) {
+        reject(error)
+    }
+})
+
+export const searchProductByName = (name) => new Promise(async (resolve, reject) => {
+    try {
+        const response = await db.Product.findAll({
+            where: [{name: { [Op.like]: `%${name}%` }},{trash:0}]
+        })
+        resolve({
+            err: 0,
+            productData: response
+        })
+    } catch (error) {
+        reject(error)
+    }
+})
+
+export const getNewProduct = () => new Promise(async (resolve, reject) => {
+    try {
+        const response = await db.Product.findAll({
+            where: [{trash:0}],
+            limit: 4,
+      order: [['createdAt', 'DESC']]
+        })
+        resolve({
+            err: 0,
+            productData: response
+        })
     } catch (error) {
         reject(error)
     }

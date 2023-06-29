@@ -1,5 +1,4 @@
 import axios from "axios";
-import { toast } from "react-toastify";
 import Api from "../../api/Api";
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -20,11 +19,7 @@ export function AddToCart(e, id) {
     };
 
     axios(config)
-        .then(function (response) {
-            toast(response.data.mes,{
-                position: toast.POSITION.TOP_CENTER
-            })
-        })
+    .then(res => console.log(res))
         .catch(function (error) {
             console.log(error);
         });
@@ -46,13 +41,13 @@ export function DeleteCart(e, id) {
         data: data
     };
     axios(config)
-        .then(res=>console.log(res))
+        .then(res => console.log(res))
         .catch(error => console.log(error));
 }
 
-export function DeleteAllCart(e) {
-    console.log('dete')
-    e.preventDefault();
+export function DeleteAllCart() {
+    // console.log('dete')
+    // e.preventDefault();
     // var data = JSON.stringify({
     //     "id": id
     // });
@@ -67,6 +62,6 @@ export function DeleteAllCart(e) {
         // data: data
     };
     axios(config)
-        .then(res=>console.log(res))
+        .then(res => console.log(res))
         .catch(error => console.log(error));
 }

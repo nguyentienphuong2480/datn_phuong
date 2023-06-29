@@ -5,116 +5,97 @@ import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
 import { AddToCart} from '../cart/activiteCart'
 import { ToastContainer} from 'react-toastify'
+import ReactPaginate from 'react-paginate';
 
 export default function ProductBrand(props) {
-    const format = Intl.NumberFormat('en')
-    const [count, setCount] = useState();
-    const [products, setProducts] = useState();
-    const [brands, setBrands] = useState();
-    const [pageNumber, setpageNumber] = useState(1);
-    const [beginGet, setbeginGet] = useState(0);
-    const [endGet, setendGet] = useState(12);
-    const page = []
-    let limit = 12
-    for (let i = 1; i <= Math.ceil(count / limit); i++) page.push(i)
-    const NewPageNumber = (e, i) => {
-        e.preventDefault()
-        setpageNumber(i)
-        setbeginGet(limit * (i - 1))
-        setendGet(limit * i)
+  const format = Intl.NumberFormat('en')
+  const [count, setCount] = useState(0);
+  const [products, setProducts] = useState([]);
+  const [brands, setBrands] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const productsPerPage = 12;
+  const pagesVisited = currentPage * productsPerPage;
+  const pageCount = Math.ceil(count / productsPerPage);
+
+  useEffect(() => {
+    setCurrentPage(0);
+    const loadData = () => {
+      axios.get(Api.ProductBrand(props.id))
+        .then(res => {
+          setProducts(res.data.productData.rows)
+          setCount(res.data.productData.count)
+        })
+        .catch(err => console.log(err))
+
+      axios.get(Api.Brand)
+        .then(res => setBrands(res.data.brandData))
+        .catch(err => console.log(err))
     }
-    const listNumberPage = page.map(i => {
-        if (i === pageNumber)
-            return (
-                <li className="page-item" key={i}>
-                    <Link className="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark active">{i}</Link>
+    loadData()
+  }, [props.id]);
+
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected);
+  };
+
+  return (
+    <div className="container py-5">
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="row">
+            <div className="col-md-12">
+              <ul className="list-inline shop-top-menu pb-3 pt-1">
+                <li className="list-inline-item">
+                  <Link to='/product' className="h3 text-decoration-none mr-3 active-category" >All</Link>
                 </li>
-            )
-        else
-            return (
-                <li className="page-item" onClick={e => NewPageNumber(e, i)} key={i}>
-                    <Link className="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark">{i}</Link>
-                </li>
-            )
-    })
-
-    useEffect(() => {
-        const loadData = () => {
-            axios.get(Api.ProductBrand(props.id))
-                .then(res => {
-                    setProducts(res.data.productData.rows)
-                    setCount(res.data.productData.count)
-                })
-                .catch(err => console.log(err))
-
-            axios.get(Api.Brand)
-                .then(res => setBrands(res.data.brandData))
-                .catch(err => console.log(err))
-        }
-        loadData()
-    }, [props.id]);
-    return (
-        <div className="container py-5">
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="list-inline shop-top-menu pb-3 pt-1">
-                                <li className="list-inline-item">
-                                    <Link to='/product' className="h3 text-decoration-none mr-3 active-category" >All</Link>
-                                </li>
-                                {
-                                    brands?.map(brand => {
-                                        return (
-                                            <li className="list-inline-item">
-                                                <Link to={'/productbrand/' + brand.id} className="h3 text-decoration-none mr-3" >{brand.name}</Link>
-                                            </li>
-                                        )
-                                    })
-                                }
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="row product">
-                        {
-                            products?.slice((beginGet), endGet).map(product => {
-                                return (
-                                    <div className="col-md-3 item" key={product.id}>
-                                        <div className="card mb-4 product-wap rounded-0">
-                                            <div className="card rounded-0">
-                                                <img className="card-img rounded-0 img-fluid" src={product.image} alt="" />
-                                                <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                                                    <ul className="list-unstyled">
-                                                    <li><Link to={'/productdetail/' + product.id} className="btn btn-success text-white mt-2"><i className="far fa-eye"></i></Link></li>
-                            <li><Link onClick={e=>AddToCart(e, product.id)} className="btn btn-success text-white mt-2"><i className="fas fa-cart-plus"></i></Link></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="card-body">
-                                                <a href="shop-single.html" className="h3 text-decoration-none">{product.name}</a>
-                                                {/* <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                              <li>M/L/X/XL</li>
-                            </ul> */}
-                                                <p className="text-center mb-0">{format.format(product.price)}<sup>đ</sup></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })
-
-                        }
-
-                    </div>
-                    <div div="row">
-                        <ul className="pagination pagination-lg justify-content-center">
-                            {
-                                listNumberPage
-                            }
-                        </ul>
-                    </div>
-                </div>
+                {brands?.map(brand => {
+                  return (
+                    <li className="list-inline-item" key={brand.id}>
+                      <Link to={'/productbrand/' + brand.id} className="h3 text-decoration-none mr-3" >{brand.name}</Link>
+                    </li>
+                  )
+                })}
+              </ul>
             </div>
-            <ToastContainer/>
+          </div>
+          <div className="row product">
+            {products?.slice(pagesVisited, pagesVisited + productsPerPage).map(product => {
+              return (
+                <div className="col-md-3 item" key={product.id}>
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img className="card-img rounded-0 img-fluid" src={product.image} alt="" />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
+                          <li><Link to={'/productdetail/' + product.id} className="btn btn-success text-white mt-2"><i className="far fa-eye"></i></Link></li>
+                          <li><Link onClick={e => AddToCart(e, product.id)} className="btn btn-success text-white mt-2"><i className="fas fa-cart-plus"></i></Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="card-body">
+                      <a href="shop-single.html" className="h3 text-decoration-none">{product.name}</a>
+                      <p className="text-center mb-0">{format.format(product.price)}<sup>đ</sup></p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+          <div className="row">
+            <div className="col-md-12 d-flex justify-content-center">
+              <ReactPaginate
+                pageCount={pageCount}
+                marginPagesDisplayed={2}
+                pageRangeDisplayed={5}
+                onPageChange={handlePageChange}
+                containerClassName={"pagination"}
+                activeClassName={"active"}
+              />
+            </div>
+          </div>
         </div>
-    );
+      </div>
+      <ToastContainer />
+    </div>
+  );
 }

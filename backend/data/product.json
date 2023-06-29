@@ -1,640 +1,543 @@
 {
-    "product": [
-        {
-            "name": "Giày Puma Taper Nam - Trắng",
-            "price": 1390000,
-            "image": "client\/assets\/img\/products\/giay-puma-taper-nam-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Smash Cat Perf FS SL Nam Nữ - Trắng Gold",
-            "price": 1190000,
-            "image": "client\/assets\/img\/products\/giay-puma-smash-cat-perf-fs-sl-nam-nu-trang-gold-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Smash Cat Perf FS SL Nam Nữ - Trắng Xanh",
-            "price": 1190000,
-            "image": "client\/assets\/img\/products\/giay-puma-smash-cat-perf-fs-sl-nam-nu-trang-xanh-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Smash Buck Nam - Nâu",
-            "price": 1290000,
-            "image": "client\/assets\/img\/products\/giay-puma-smash-buck-nam-nau-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Smash Cat L Nam Nữ - Trắng Xanh",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-puma-smash-cat-l-nam-nu-trang-xanh-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Smash Cat L Nam Nữ - Trắng Đỏ",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-puma-smash-cat-l-nam-trang-do-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma X Ray Trainers Nam - Trắng",
-            "price": 1690000,
-            "image": "client\/assets\/img\/products\/giay-puma-x-ray-trainers-nam-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Smash Cat Perf FS SL Nam Nữ - Trắng Navy",
-            "price": 1190000,
-            "image": "client\/assets\/img\/products\/giay-puma-smash-cat-perf-fs-sl-nam-nu-trang-navy-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Serve Pro 1948 Team Gold Nam - Trắng",
-            "price": 1690000,
-            "image": "client\/assets\/img\/products\/giay-puma-serve-pro-1948-team-gold-nam-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Taper Nam - Navy Trắng",
-            "price": 1390000,
-            "image": "client\/assets\/img\/products\/giay-puma-taper-nam-xanh-navy-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Club NL Nam - Trắng",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-puma-club-nl-nam-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Softride Cruise Nam - Trắng",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-puma-softride-cruise-nam-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Club Nam - Trắng",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-puma-club-nam-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Club Nam - Xanh Navy",
-            "price": 1390000,
-            "image": "client\/assets\/img\/products\/giay-puma-club-nl-nam-navy-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Club Nam - Đen",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-puma-club-nl-nam-den-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Smash Cat L Nam - Trắng Navy",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-puma-smash-cat-l-nam-trang-navy-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Taper Nam - Xám",
-            "price": 1390000,
-            "image": "client\/assets\/img\/products\/giay-puma-taper-nam-xam-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Court Pure Nam - Trắng",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-puma-court-pure-nam-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Court Pure Nam - Đen Trắng",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-puma-court-pure-nam-den-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Ralph Sampson Lo Nam - Trắng Đỏ",
-            "price": 1990000,
-            "image": "client\/assets\/img\/products\/giay-puma-palph-sampson-lo-nam-trang-do-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Electrify Nitro Nam - Xám Đen",
-            "price": 1990000,
-            "image": "client\/assets\/img\/products\/giay-puma-electrify-nitro-nam-den-xam-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Softride Vital Nam - Đen Full",
-            "price": 1390000,
-            "image": "client\/assets\/img\/products\/giay-puma%20softride-vital-nam-den-full-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma NRGY Rupture Nam - Đen Full",
-            "price": 990000,
-            "image": "client\/assets\/img\/products\/giay-Puma-NRGY-Rupture-Nam-den-full-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày Puma Caven Nam - Đen Trắng",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-puma-caven-nam-den-trang-01-500x500.jpg",
-            "brand": 1
-        },
-        {
-            "name": "Giày adidas Adizero RC 5 Nam - Đen Trắng",
-            "price": 2290000,
-            "image": "client\/assets\/img\/products\/giay-adidas-adizero-rc-5-nam-den-trang-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Adizero RC 4 Wide Nam - Đen Trắng",
-            "price": 1990000,
-            "image": "client\/assets\/img\/products\/giay-adidas-adizero-rc-4-wide-nam-den-trang-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Pureboost 22 Jet Nam - Trắng",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-adidas-pureboost-22-jet-nam-trang-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Pureboost 22 Jet Nam - Đen Trắng",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-adidas-pureboost-22-jet-nam-den-trang-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Pureboost 22 Nam - Trắng Xanh",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-adidas-pureboost-22-nam-trang-xanh-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Solarglide 5 Nam - Vàng Cam",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-solar-glide-5-nam-vang-cam-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Solarglide 5 Nam - Đen Đen",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-solar-glide-5-nam-den-den-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Adizero RC 5 Nam Nữ - Trắng Xanh",
-            "price": 2190000,
-            "image": "client\/assets\/img\/products\/giay-adidas-adizero-rc-5-nam-nu-trang-xanh-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Terrex Voyager 21 Canvas Nam - Xám",
-            "price": 2490000,
-            "image": "client\/assets\/img\/products\/giay-adidas-terrex-voyager-21-canvas-nam-xam-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Solarglide 5 Nam - Đen Trắng",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-solar-glide-5-nam-den-trang-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Supernova 2 Nam - Trắng Đen",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-adidas-supernova-2-nam-trang-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Grand Court Base 2.0 Nam - Trắng",
-            "price": 1690000,
-            "image": "client\/assets\/img\/products\/giay-adidas-grand-court-base-2-nam-trang-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Galaxy 6 Nữ - Đen Tím",
-            "price": 1490000,
-            "image": "client\/assets\/img\/products\/giay-adidas-galaxy-6-nu-den-tim-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Response Nam - Đen Đen",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-adidas-response-nam-den-den-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Duramo SL 2.0 Nam - Trắng Đen",
-            "price": 1590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-duramo-sl-2-nam-trang-den-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày adidas Supernova+ Nam - Đen Xanh",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-supernova+-nam-den-xanh-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày Adidas Breaknet Nam Nữ - Trắng Đen",
-            "price": 1590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-breaknet-nam-nu-trang-den-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày Adidas Breaknet Nam - Đen Trắng",
-            "price": 1590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-breaknet-nam-den-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày Adidas Breaknet Nữ - Trắng Hồng",
-            "price": 1590000,
-            "image": "client\/assets\/img\/products\/giay-adidas-breaknet-nu-trang-hong-01-500x500.jpg",
-            "brand": 2
-        },
-        {
-            "name": "Giày Nike SB Alleyoop Nam - Trắng Đen",
-            "price": 1990000,
-            "image": "client\/assets\/img\/products\/giay-nikesb-alleyoop-nam-trang-den-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike SB Alleyoop Nam - Đen Trắng",
-            "price": 1990000,
-            "image": "client\/assets\/img\/products\/giay-nikesb-alleyoop-nam-den-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike MC Trainer Nam - Xanh Navy",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-nike-mc-trainer-nam-xanh-navy-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Ebernon Low Nam - Trắng",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-nike-ebernon-low-nam-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike MD Runner 2 Nam - Đen",
-            "price": 1990000,
-            "image": "client\/assets\/img\/products\/giay-nike-md-runner-2-nam-den-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Court Royale Nam - Trắng Xanh",
-            "price": 1590000,
-            "image": "client\/assets\/img\/products\/giay-nike-court-royale-nam-trang-xanh-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Quest 4 Nữ - Trắng Hồng",
-            "price": 2190000,
-            "image": "client\/assets\/img\/products\/giay-nike-quest-4-nu-trang-hong-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Quest 4 Nữ - Trắng",
-            "price": 2190000,
-            "image": "client\/assets\/img\/products\/giay-nike-quest-4-nu-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Renew Run 3 Nam - Đen Trắng",
-            "price": 2190000,
-            "image": "client\/assets\/img\/products\/giay-nike-renew-run-3-nam-den-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Air Max Excee Nữ - Trắng",
-            "price": 2390000,
-            "image": "client\/assets\/img\/products\/giay-nike-air-max-excee-nu-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike City Trainer 3 Nữ - Xám Hồng",
-            "price": 1390000,
-            "image": "client\/assets\/img\/products\/giay-nike-city-trainer-3-nu-xam-hong-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Downshifter 12 Nam - Trắng Xanh",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-nike-downshifter-12-nam-trang-xanh-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Court Vision Low Nam - Đen Xanh",
-            "price": 2090000,
-            "image": "client\/assets\/img\/products\/giay-nike-court-vision-low-nam-den-xanh-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Flex Control TR4 Nam - Đen Trắng",
-            "price": 1890000,
-            "image": "client\/assets\/img\/products\/giay-nike-flex-control-tr4-nam-den-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike MC Trainer Nam - Đen Trắng",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-nike-mc-trainer-nam-den-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Air Max SC Nam - Xám Xanh",
-            "price": 2190000,
-            "image": "client\/assets\/img\/products\/giay-nike-air-max-sc-nam-xam-xanh-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Legend Essential 3 Nam - Đen Trắng",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-nike-legend-essential-3-nam-den-trang-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Nike Flex Experience RN 11 Nữ - Đen Trắng",
-            "price": 1790000,
-            "image": "client\/assets\/img\/products\/giay-nike-flex-experience-rn-11-nu-01-500x500.jpg",
-            "brand": 3
-        },
-        {
-            "name": "Giày Lacoste Jump Serve Canvas Slip On Nam - Đen",
-            "price": 1890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-Jump-Serve-Canvas-Slip-On-nam-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste L005 222 Nam - Trắng Xanh",
-            "price": 3390000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-l005-222-nam-trang-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon BL 22 2 Nam - Đen",
-            "price": 3390000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-bl-22-2-nam-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Europa Tri 1 Nam - Trắng",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-europa-tri-1-nam-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste PowerCourt 1121 Nam - Đen",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-powercourt-1121-nam-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste L001 321 Nam - Trắng",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-l001-321-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Angular Textile Popped Heel Nam - Nâu",
-            "price": 3390000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-angular-textile-popped-heel-nam-nau-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste PowerCourt 2 Nam - Đen Trắng",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-powercourt-nam-den-trang-1-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Court-Lisse 222 Leather Nam - Trắng Xanh",
-            "price": 2490000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-court-lisse-leather-nam-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste L001 222 Nam - Trắng Navy",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-l001-222-trang-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste L001 222 Nam - Xám Xanh",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-l001-222-xam-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Carnaby Pro 222 Nam - Xanh Navy",
-            "price": 2790000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-carnaby-pro-222-xanh-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 222 2 Nam - Xám",
-            "price": 2790000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-222-2-nam-xam-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 120 Nam - Xanh Navy",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-120-nam-xanh-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 120 Nam - Trắng Navy",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-BL-22-nam-trang-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 120 Nam - Đen Xanh",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-120-nam-den-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 120 2 Nam - Trắng Navy",
-            "price": 3590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-120-2-nam-trang-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 7221 Nam - Trắng Xanh",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-7221-nam-tr%E1%BA%AFng-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste PowerCourt 1121 Nam - Trắng",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-powercourt-1121-nam-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Game Advance Nam - Đen",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste--game-advance-leather-nam-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Misano Strap 120 Nam - Xanh Navy",
-            "price": 2790000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-misano-strap-120-nam-xanh-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Bayliss Deck 721 Nam - Nâu",
-            "price": 2290000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-bayliss-deck-nam-nau-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Gripshot 222 Nam - Nâu",
-            "price": 2390000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-gripshot-222-nam-nau-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Gripshot 222 Nam - Xanh",
-            "price": 2390000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-gripshot-222-nam-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Hydez 119 Nam - Trắng Xanh",
-            "price": 2490000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-hydez-119-trang-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Hapona 721 Leather Nam - Xanh Trắng",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-hapona-leather-nam-xanh-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Hapona 721 Leather Nam - Trắng Rêu",
-            "price": 2790000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-hapona-721-nam-trang-reu-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 722 Nam - Đen Trắng",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-722-nam-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Run Spin Knit Nam - Trắng",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-run-spin-knit-121-nam-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Run Spin Knit Nam - Xanh Navy",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-run-spin-knit-121-nam-xanh-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Run Spin Knit Nam - Đen Trắng",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-run-spin-knit-121-nam-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 722 Nam - Trắng Xanh",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-722-nam-tr%E1%BA%AFng-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Carnaby Evo GTX 722 Nam - Trắng",
-            "price": 2990000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-carnaby-evo-gtx-722-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste L004 722 Nam - Trắng Xanh",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-l004-722-nam-trang-xanh-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste PowerCourt TRI22 Nam - Trắng Navy",
-            "price": 2690000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-powercourt-tri22-nam-trang-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Carnaby Evo BL21 Nam - Trắng Navy",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-carnaby-evo-bl21-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Bayliss 119 Nam - Xanh Navy",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-bayliss-119-xanh-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Carnaby Evo BL21 Nam - Đen Trắng",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-carnaby-evo-bl21-den-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 721 Nam - Đen Đen",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-721-nam-den-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Carnaby Evo BL21 Nam - Trắng",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-carnaby-evo-BL21-nam-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Court-Drive Trainers Nam - Đen",
-            "price": 2290000,
-            "image": "client\/assets\/img\/products\/Giay-Lacoste-Court-Drive-Trainers-den-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Court-Drive Trainers Nam - Trắng",
-            "price": 2390000,
-            "image": "client\/assets\/img\/products\/Giay-Lacoste-Court-Drive-Trainers-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Chaymon 121 Nam - Trắng",
-            "price": 2890000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-chaymon-121-nam-trang-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Carnaby Evo BL1 Nam - Xanh navy",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-carnaby-evo-BL-nam-xanh-navy-01-500x500.jpg",
-            "brand": 4
-        },
-        {
-            "name": "Giày Lacoste Carnaby Evo BL1 Nam - Trắng Gót Navy",
-            "price": 2590000,
-            "image": "client\/assets\/img\/products\/giay-lacoste-carnaby-evo-bl1-nam-trang-xanh-01-500x500.jpg",
-            "brand": 4
-        }
-    ]
+  "product": [
+    {
+      "name": "Giày adidas Adizero RC 4 Wide Nam - Đen Trắng",
+      "description": "Giày adidas Adizero RC 4 là mẫu giày chạy bộ nhẹ, có thiết kế đẹp, thời trang. Đặc điểm cực kỳ nổi bật là hơn 50% sản phẩm được làm bằng vật liệu tái chế thân thiện và bảo vệ môi trường.",
+      "price": 1990000,
+      "image": "client/assets/img/products/giay-adidas-adizero-rc-4-wide-nam-den-trang-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Adizero RC 5 Nam - Đen Trắng",
+      "description": "Giày adidas Adizero RC 5 là mẫu giày chạy bộ siêu nhẹ, có thiết kế cực đẹp và thời trang phù hợp cho cả nam và nữ. Đặc điểm cực kỳ nổi bật là hơn 50% sản phẩm được làm bằng vật liệu tái chế thân thiện và bảo vệ môi trường.",
+      "price": 2290000,
+      "image": "client/assets/img/products/giay-adidas-adizero-rc-5-nam-den-trang-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Adizero RC 5 Nam Nữ - Trắng Xanh",
+      "description": "Giày adidas Adizero RC 5 là mẫu giày chạy bộ siêu nhẹ, có thiết kế cực đẹp và thời trang phù hợp cho cả nam và nữ. Đặc điểm cực kỳ nổi bật là hơn 50% sản phẩm được làm bằng vật liệu tái chế thân thiện và bảo vệ môi trường.",
+      "price": 2190000,
+      "image": "client/assets/img/products/giay-adidas-adizero-rc-5-nam-nu-trang-xanh-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày Adidas Breaknet Nam Nữ - Trắng Đen",
+      "description": "Giày Adidas Breaknet  được thiết kế basic cho các tín đồ yêu thời trang. Với các kiểu thiết kế Original này bạn sẽ không bao giờ lo lắng chuyện đôi giày của bạn bị lỗi mốt theo năm tháng.",
+      "price": 1590000,
+      "image": "client/assets/img/products/giay-adidas-breaknet-nam-nu-trang-den-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày Adidas Breaknet Nam - Đen Trắng",
+      "description": "Giày Adidas Breaknet  được thiết kế basic cho các tín đồ yêu thời trang. Với các kiểu thiết kế Original này bạn sẽ không bao giờ lo lắng chuyện đôi giày của bạn bị lỗi mốt theo năm tháng.",
+      "price": 1590000,
+      "image": "client/assets/img/products/giay-adidas-breaknet-nam-den-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Duramo SL 2.0 Nam - Trắng Đen",
+      "description": "Giày adidas Duramo SL 2.0 là phiên bản nâng cấp của mẫu adidas Duramo SL được rất nhiều người yêu thích.Với công nghệ đế LightMotion giúp bạn luôn di chuyển thật thoải mái để nâng cao sức khỏe.",
+      "price": 1590000,
+      "image": "client/assets/img/products/giay-adidas-duramo-sl-2-nam-trang-den-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Galaxy 6 Nữ - Đen Tím",
+      "description": "Giày adidas Galaxy 6  có thiết kế thể thao đẹp mắt, đây là mẫu giày có thể sử dụng trong mọi hoạt động hàng ngày. adidas Galaxy 6 có nhiều cải tiến so với adidas Galaxy 5 giúp đôi giày ngày càng hoàn hảo.",
+      "price": 1490000,
+      "image": "client/assets/img/products/giay-adidas-galaxy-6-nu-den-tim-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Grand Court Base 2.0 Nam - Trắng",
+      "description": "Giày adidas Grand Court Base 2.0 phiên bản nâng cấp rất được ưu chuộng của dòng Grand Court Base .Với những cải tiến mới khiến cho mẫu giày này bền đẹp và năng động hơn khá nhiều.",
+      "price": 1690000,
+      "image": "client/assets/img/products/giay-adidas-grand-court-base-2-nam-trang-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Pureboost 22 Jet Nam - Đen Trắng",
+      "description": "Giày adidas Pureboost 22 Jet là một trong những mẫu giày thể thao có thiết kế và công nghệ tốt nhất của adidas. Pureboost 22 giúp bạn vững bước trên mỗi chặng đường.",
+      "price": 2690000,
+      "image": "client/assets/img/products/giay-adidas-pureboost-22-jet-nam-den-trang-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Pureboost 22 Jet Nam - Trắng",
+      "description": "Giày adidas Pureboost 22 Jet là một trong những mẫu giày thể thao có thiết kế và công nghệ tốt nhất của adidas. Pureboost 22 giúp bạn vững bước trên mỗi chặng đường.",
+      "price": 2690000,
+      "image": "client/assets/img/products/giay-adidas-pureboost-22-jet-nam-trang-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Pureboost 22 Nam - Trắng Xanh",
+      "description": "Giày adidas Pureboost 22 là một trong những mẫu giày thể thao có thiết kế và công nghệ tốt nhất của adidas. Pureboost 22 giúp bạn vững bước trên mỗi chặng đường.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-adidas-pureboost-22-nam-trang-xanh-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Response Nam - Đen Đen",
+      "description": "Giày adidas Response là một mẫu giày thể thao với thiết kế rất đẹp khỏe khoắn, adidas Response mang đến cho bạn cảm giác thoải mái và nâng đỡ bạn trên mọi chặng đường.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-adidas-response-nam-den-den-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Solarglide 5 Nam - Đen Đen",
+      "description": "Giày adidas Solarglide 5 là mẫu giày thể thao đa dụng thường ngày với khả năng hoàn trả năng lượng tuyệt vời. Thiết kế đẹp đầy năng động giúp cho adidas Solarglide 5 chiếm được cảm tình của bất cứ ai khi nhìn thấy nó.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-adidas-solar-glide-5-nam-den-den-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Solarglide 5 Nam - Đen Trắng",
+      "description": "Giày adidas Solarglide 5 là mẫu giày thể thao đa dụng thường ngày với khả năng hoàn trả năng lượng tuyệt vời. Thiết kế đẹp đầy năng động giúp cho adidas Solarglide 5 chiếm được cảm tình của bất cứ ai khi nhìn thấy nó.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-adidas-solar-glide-5-nam-den-trang-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Solarglide 5 Nam - Vàng Cam",
+      "description": "Giày adidas Solarglide 5 là mẫu giày thể thao đa dụng thường ngày với khả năng hoàn trả năng lượng tuyệt vời. Thiết kế đẹp đầy năng động giúp cho adidas Solarglide 5 chiếm được cảm tình của bất cứ ai khi nhìn thấy nó.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-adidas-solar-glide-5-nam-vang-cam-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Supernova 2 Nam - Trắng Đen",
+      "description": "Giày adidas Supernova 2 là mẫu giày thể thao có thiết kế cực đẹp kết hợp với công nghệ đỉnh cao của adidas, adidas Supernova 2 mang đến cảm giác vô cùng thoải mái cho người sử dụng.",
+      "price": 2690000,
+      "image": "client/assets/img/products/giay-adidas-supernova-2-nam-trang-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Supernova+ Nam - Đen Xanh",
+      "description": "Giày adidas Supernova+ là mẫu giày thể thao có thiết kế rất đẹp, cùng với đó là công nghệ đỉnh cao với những vật liệu cao cấp độc quyền của Adidas. adidas Supernova+ là mẫu giày mà dân thể thao không thể bỏ qua.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-adidas-supernova+-nam-den-xanh-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày adidas Terrex Voyager 21 Canvas Nam - Xám",
+      "description": "Giày adidas Terrex Voyager 21 Canvas là một mẫu giày tuyệt vời dành cho những ai yêu thích du lịch, leo núi với trải nghiệm thật sự thú vị mà nó mang lại.",
+      "price": 2490000,
+      "image": "client/assets/img/products/giay-adidas-terrex-voyager-21-canvas-nam-xam-01-500x500.jpg",
+      "brand": 2
+    },
+    {
+      "name": "Giày Lacoste Angular Textile Popped Heel Nam - Nâu",
+      "description": "Giày Lacoste Angular Textile Popped Heel có thiết kế đẳng cấp đặc trưng của Lacoste, với sự kết hợp hoàn hảo các chất liệu da thật, da lộn, vải mesh mang đến vẻ đẹp sang trọng khó có thể chối từ.",
+      "price": 3390000,
+      "image": "client/assets/img/products/giay-lacoste-angular-textile-popped-heel-nam-nau-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Bayliss 119 Nam - Xanh Navy",
+      "description": "Giày Lacoste Bayliss 119 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Giày Lacoste Bayliss 119 được làm từ da cao cấp, mềm và có độ bền cao, không nhăn không thấm nước.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-lacoste-bayliss-119-xanh-navy-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Bayliss Deck 721 Nam - Nâu",
+      "description": "Giày Lacoste Bayliss Deck 721 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn.",
+      "price": 2290000,
+      "image": "client/assets/img/products/giay-lacoste-bayliss-deck-nam-nau-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Carnaby Evo BL1 Nam - Trắng Gót Navy",
+      "description": "Giày Lacoste Carnaby Evo BL 1 vẫn là thiết kể cổ điển của dòng Carnaby Evo sử dụng chất liệu da cao cấp mềm, hơn nữa không bị bí do đục lỗ ở 2 bên. Tỉ mỉ trong từng chi tiết cũng là đặc điểm nổi bật của dòng giày Lacoste. Đế cao su đúc dày êm chân được gắn với phần upper bằng công nghệ ép nhiệt, có khâu đế xung quanh khiến đôi giày Lacoste Carnaby Evo BL 1 chắc chắn và bền hơn nữa. Màu xanh navy trung tính luôn được nhiều khách hàng lựa chọn bởi màu sắc dễ kết hợp trang phục. Bạn có thể vừa mặc đi làm đi chơi.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-lacoste-carnaby-evo-bl1-nam-trang-xanh-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Carnaby Evo BL1 Nam - Xanh navy",
+      "description": "Giày Lacoste Carnaby Evo BL1 được thiết kế với phong cách thời trang cổ điển, thanh lịch với màu trắng trang nhã. Giày có phần upper sử dụng lớp da cao cấp, bền bỉ theo thời gian. Phần đế trong sử dụng lớp đệm êm ái cùng với công nghệ Otholite chống thấm nước. Ngoài ra đôi giày có bộ dế cao su lưu hóa được Lacoste nghiên cứu và thử nghiệm vừa êm ái mà cũng không kém phần cứng cáp. Đây chắc chắn sẽ là mẫu giày giúp bạn có một phong cách vừa sang trọng, vừa trẻ trung, giúp bạn tự tin tự tin trong từng bước đi",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-lacoste-carnaby-evo-BL-nam-xanh-navy-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Carnaby Evo BL21 Nam - Đen Trắng",
+      "description": "Giày Lacoste Carnaby Evo BL21 vẫn là thiết kể cổ điển của dòng Carnaby Evo sử dụng chất liệu da cao cấp mềm. Tỉ mỉ trong từng chi tiết cũng là đặc điểm nổi bật của dòng giày Lacoste.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-lacoste-carnaby-evo-bl21-den-trang-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Carnaby Evo BL21 Nam - Trắng",
+      "description": "Giày Lacoste Carnaby Evo BL21 vẫn là thiết kể cổ điển của dòng Carnaby Evo sử dụng chất liệu da cao cấp mềm. Tỉ mỉ trong từng chi tiết cũng là đặc điểm nổi bật của dòng giày Lacoste.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-lacoste-carnaby-evo-BL21-nam-trang-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Carnaby Evo BL21 Nam - Trắng Navy",
+      "description": "Giày Lacoste Carnaby Evo BL21 vẫn là thiết kể cổ điển của dòng Carnaby Evo sử dụng chất liệu da cao cấp mềm, hơn nữa không bị bí do đục lỗ ở 2 bên. Tỉ mỉ trong từng chi tiết cũng là đặc điểm nổi bật của dòng giày Lacoste.",
+      "price": 2590000,
+      "image": "client/assets/img/products/giay-lacoste-carnaby-evo-bl21-trang-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Carnaby Evo GTX 722 Nam - Trắng",
+      "description": "Giày Lacoste Carnaby Evo GTX 722 vẫn là thiết kể cổ điển của dòng Carnaby Evo sử dụng chất liệu da cao cấp mềm. Tỉ mỉ trong từng chi tiết cũng là đặc điểm nổi bật của dòng giày Lacoste. Công nghệ Gore-Tex chống nước vượt trội là điểm đáng chú y của mẫu giày này.",
+      "price": 2990000,
+      "image": "client/assets/img/products/giay-lacoste-carnaby-evo-gtx-722-trang-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Court-Drive Trainers Nam - Đen",
+      "description": "Giày Lacoste Court-Drive Trainers là mẫu giày thể thao thời trang đa dụng của Lacoste. Đây là mẫu giày tuyệt vời dành cho các hoạt động thể thao hàng ngày như: Tập Gym, chạy bộ, đi bộ, đi chơi, đi làm...",
+      "price": 2290000,
+      "image": "client/assets/img/products/Giay-Lacoste-Court-Drive-Trainers-den-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Court-Drive Trainers Nam - Trắng",
+      "description": "Giày Lacoste Court-Drive Trainers là mẫu giày thể thao thời trang đa dụng của Lacoste. Đây là mẫu giày tuyệt vời dành cho các hoạt động thể thao hàng ngày như: Tập Gym, chạy bộ, đi bộ, đi chơi, đi làm...",
+      "price": 2390000,
+      "image": "client/assets/img/products/Giay-Lacoste-Court-Drive-Trainers-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Court-Lisse 222 Leather Nam - Trắng Xanh",
+      "description": "Giày Lacoste Court-Lisse 222 Leather có thiết kế thời trang cực kỳ tinh tế đúng với đẳng cấp của Lacoste. Phần upper được là từ da cao cấp bền đẹp. Đây là một trong những mẫu giày không thể bỏ qua với tín đồ yêu thương hiệu Pháp.",
+      "price": 2490000,
+      "image": "client/assets/img/products/giay-lacoste-court-lisse-leather-nam-trang-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 120 2 Nam - Trắng Navy",
+      "description": "Giày Lacoste Chaymon 120 2 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Lacoste Chaymon 120 2 được nâng cấp vợt trội so với phiên bản trước.",
+      "price": 3590000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-120-2-nam-trang-navy-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 120 Nam - Đen Xanh",
+      "description": "Giày Lacoste Chaymon 120 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-120-nam-den-xanh-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 120 Nam - Trắng Navy",
+      "description": "Giày Lacoste Chaymon 120 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn. Phần đế giày được làm từ cao su lưu hóa được hãng Lacoste nghiên cứu và thử nghiệm mang lại độ bền và độ êm tuyệt đối cho đôi chân của bạn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-BL-22-nam-trang-navy-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 120 Nam - Xanh Navy",
+      "description": "Giày Lacoste Chaymon 120 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn. Phần đế giày được làm từ cao su lưu hóa được hãng Lacoste nghiên cứu và thử nghiệm mang lại độ bền và độ êm tuyệt đối cho đôi chân của bạn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-120-nam-xanh-navy-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 121 Nam - Trắng",
+      "description": "Giày Lacoste Chaymon 121  được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-121-nam-trang-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 222 2 Nam - Xám",
+      "description": "Giày Lacoste Chaymon 222 2 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Chất liệu da trơn kết hợp tinh tế với da lộn cao cấp mang đến sự độc đáo không thể bỏ qua.",
+      "price": 2790000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-222-2-nam-xam-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 721 Nam - Đen Đen",
+      "description": "Giày Lacoste Chaymon 721 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn. Phần đế giày được làm từ cao su lưu hóa được hãng Lacoste nghiên cứu và thử nghiệm mang lại độ bền và độ êm tuyệt đối cho đôi chân của bạn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-721-nam-den-den-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 722 Nam - Đen Trắng",
+      "description": "Giày Lacoste Chaymon 722 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn. Phần đế giày được làm từ cao su lưu hóa được hãng Lacoste nghiên cứu và thử nghiệm mang lại độ bền và độ êm tuyệt đối cho đôi chân của bạn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-722-nam-den-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 722 Nam - Trắng Xanh",
+      "description": "Giày Lacoste Chaymon 722 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn. Phần đế giày được làm từ cao su lưu hóa được hãng Lacoste nghiên cứu và thử nghiệm mang lại độ bền và độ êm tuyệt đối cho đôi chân của bạn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-722-nam-tr%E1%BA%AFng-xanh-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Lacoste Chaymon 7221 Nam - Trắng Xanh",
+      "description": "Giày Lacoste Chaymon 7221 được thiết kế với phong cách cổ điển sang trọng đặc trưng của thương hiệu Lacoste. Các đường chỉ khâu thẳng hàng rất tinh tế và chắc chắn. Phần đế giày được làm từ cao su lưu hóa được hãng Lacoste nghiên cứu và thử nghiệm mang lại độ bền và độ êm tuyệt đối cho đôi chân của bạn.",
+      "price": 2890000,
+      "image": "client/assets/img/products/giay-lacoste-chaymon-7221-nam-tr%E1%BA%AFng-xanh-01-500x500.jpg",
+      "brand": 4
+    },
+    {
+      "name": "Giày Nike Air Max Excee Nữ - Trắng",
+      "description": "Giày Nike Air Max Excee mẫu giày thời trang năng động, trẻ trung Air Max Excee đã cập bến tại Myshoes.vn. Đây hứa hẹn sẽ là một mẫu giày chất chơi mà bạn không thể bỏ qua.",
+      "price": 2390000,
+      "image": "client/assets/img/products/giay-nike-air-max-excee-nu-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Air Max SC Nam - Xám Xanh",
+      "description": "Giày Nike Air Max SC mang nét huyền thoại của Nike, với bộ đệm Air Max trứ danh đây là mẫu giày có thể kết hợp với bất cứ trang phục nào mà bạn vẫn hoàn toàn tự tin trong mọi hoàn cảnh.",
+      "price": 2190000,
+      "image": "client/assets/img/products/giay-nike-air-max-sc-nam-xam-xanh-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike City Trainer 3 Nữ - Xám Hồng",
+      "description": "Giày Nike City Trainer 3 là mẫu giày training với thiết kế vô cùng thời trang đẹp mắt cùng với chất lượng tuyệt vời. Một mẫu giày luyện tập không thể bỏ qua, dành cho tất cả mọi người.",
+      "price": 1390000,
+      "image": "client/assets/img/products/giay-nike-city-trainer-3-nu-xam-hong-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Court Royale Nam - Trắng Xanh",
+      "description": "Giày Nike Court Royale là mẫu giày với thiết kế lấy cảm hứng từ thập niên 70 với những nét cổ điển mang phong cách đường phố đặc trưng. Với chất liệu da cao cấp và đến cao su nguyên chất khiến đôi giày bền bỉ với thời gian.",
+      "price": 1590000,
+      "image": "client/assets/img/products/giay-nike-court-royale-nam-trang-xanh-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Court Vision Low Nam - Đen Xanh",
+      "description": "Giày Nike Court Vision Low là mẫu giày với thiết kế lấy cảm hứng từ thập niên 80 với những nét cổ điển mang phong cách đường phố đặc trưng.",
+      "price": 2090000,
+      "image": "client/assets/img/products/giay-nike-court-vision-low-nam-den-xanh-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Downshifter 12 Nam - Trắng Xanh",
+      "description": "Giày Nike DownShifter 12 có thiết kế vô cùng đẹp và hiện đại. Kiểu dáng cũng như công nghệ được cải tiến vượt bậc so với Nike Downshifter 11. Vì thế đây chắc chắn sẽ là mẫu giày rất hot trong năm nay.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-nike-downshifter-12-nam-trang-xanh-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Ebernon Low Nam - Trắng",
+      "description": "Giày Nike Ebernon Low là mẫu giày thời trang có thiết kế đẹp của Nike, chất liệu da cao cấp và đế cao su bền chắc sẽ khiến bạn vô cùng hài lòng khi sử dụng.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-nike-ebernon-low-nam-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Flex Control TR4 Nam - Đen Trắng",
+      "description": "Giày Nike Flex Control TR4 một mẫu giày training đế Flex rất êm ái, thoải mái. Đôi giày nhẹ thiết kế phù hợp cho mọi hoạt động luyện tập hàng ngày.",
+      "price": 1890000,
+      "image": "client/assets/img/products/giay-nike-flex-control-tr4-nam-den-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Flex Experience RN 11 Nữ - Đen Trắng",
+      "description": "Giày Nike Flex Experience RN 11 một mẫu giày thể thao đa dụng, thiết kế gọn gàng mang lại cảm giác cực kỳ tự nhiên khi sử dụng. Trọng lượng siêu nhẹ, chất liệu êm ái giúp bạn di chuyển cả ngày mà không mệt mỏi.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-nike-flex-experience-rn-11-nu-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Legend Essential 3 Nam - Đen Trắng",
+      "description": "Giày Nike Legend Essential 3 có thiết kế dành tuyệt vời dành cho việc luyện tập thể thao và tập gym. Phần upper chất liệu vải mesh rất thoáng và bền chắc, phần đế giữa rất êm, đàn hồi tốt và phần đế ngoài với chất liệu bền bì chắc chắn giúp bạn an toàn khi luyện tập.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-nike-legend-essential-3-nam-den-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike MC Trainer Nam - Đen Trắng",
+      "description": "Giày Nike MC Trainer một mẫu giày luyện tập tuyệt với dành cho tất cả mọi người. Với kiểu dáng thời trang, thiết kế đơn giản nhưng vô cùng hiệu quả trong việc tập luyện thể thao.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-nike-mc-trainer-nam-den-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike MC Trainer Nam - Xanh Navy",
+      "description": "Giày Nike MC Trainer một mẫu giày luyện tập tuyệt với dành cho tất cả mọi người. Với kiểu dáng thời trang, thiết kế đơn giản nhưng vô cùng hiệu quả trong việc tập luyện thể thao.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-nike-mc-trainer-nam-xanh-navy-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike MD Runner 2 Nam - Đen",
+      "description": "Giày Nike MD Runner 2 với sự chắc chắn an toàn luôn là tiêu chí được đặt lên hàng đầu.\nSự đan xen giữa da lộn và vải lưới không thể tuyệt vời hơn của giày Nike MD Runner 2. Phần da lộn tạo độ chắc chắn, bảo vệ bàn chân bạn khỏi vật cứng, sắc nhọn, kết hợp với chất liệu vải lưới mềm mại, thoáng mát. Một điểm cộng nữa là màu sắc hài hòa, nhã nhặn, mặc bộ đồ nào cũng trở nên thể thao, năng động.",
+      "price": 1990000,
+      "image": "client/assets/img/products/giay-nike-md-runner-2-nam-den-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Quest 4 Nữ - Trắng",
+      "description": "Giày Nike Quest 4 là mẫu giày được thiết kế cực kỳ đẹp và tinh tế với đặc điểm rất thoáng khí, êm và rất nhẹ. Đây là mẫu giày có thể sử dụng trong mọi hoạt động hàng ngày.",
+      "price": 2190000,
+      "image": "client/assets/img/products/giay-nike-quest-4-nu-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Quest 4 Nữ - Trắng Hồng",
+      "description": "Giày Nike Quest 4 là mẫu giày được thiết kế cực kỳ đẹp và tinh tế với đặc điểm rất thoáng khí, êm và rất nhẹ. Đây là mẫu giày có thể sử dụng trong mọi hoạt động hàng ngày.",
+      "price": 2190000,
+      "image": "client/assets/img/products/giay-nike-quest-4-nu-trang-hong-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike Renew Run 3 Nam - Đen Trắng",
+      "description": "Giày Nike Renew Run 3 là mẫu giày thể thao năng động, có thiết kế đẹp và những công nghệ cao cấp của Nike. Với phần đế Renew cực kỳ êm ái giúp bạn di chuyển cả ngày mà không mệt mỏi.",
+      "price": 2190000,
+      "image": "client/assets/img/products/giay-nike-renew-run-3-nam-den-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike SB Alleyoop Nam - Đen Trắng",
+      "description": "Giày Nike SB Alleyoop là dòng giày sneaker có thiết kế đơn giản nhưng đẹp mắt, được rất nhiều người yêu thích. Một mẫu giày bạn có thể tự tin sử dụng trong mọi hoàn cảnh mà không sợ lỗi mốt.\nPhần upper của giày được làm từ chất liệu da lộn cao cấp kết hợp với vải Canvas chắc chắn chịu va chạm mài mòn tốt, đế giày làm bằng cao su với công nghệ độc quyền của Nike siêu bền.",
+      "price": 1990000,
+      "image": "client/assets/img/products/giay-nikesb-alleyoop-nam-den-trang-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Nike SB Alleyoop Nam - Trắng Đen",
+      "description": "Giày Nike SB Alleyoop là dòng giày sneaker có thiết kế đơn giản nhưng đẹp mắt, được rất nhiều người yêu thích. Một mẫu giày bạn có thể tự tin sử dụng trong mọi hoàn cảnh mà không sợ lỗi mốt.\nPhần upper của giày được làm từ chất liệu da lộn cao cấp kết hợp với vải Canvas chắc chắn chịu va chạm mài mòn tốt, đế giày làm bằng cao su với công nghệ độc quyền của Nike siêu bền.",
+      "price": 1990000,
+      "image": "client/assets/img/products/giay-nikesb-alleyoop-nam-trang-den-01-500x500.jpg",
+      "brand": 3
+    },
+    {
+      "name": "Giày Puma Club Nam - Trắng",
+      "description": "Giày Puma Club NL có thết kế thời trang cổ điển đặc trưng của Puma, một mẫu giày không bao giờ lỗi mốt, trường tồn với thời gian. Chất liệu da lộn mềm đẹp kết hợp với canvas cao cấp và đế cao su bền bỉ khiến bạn không thể bỏ qua được.",
+      "price": 1490000,
+      "image": "client/assets/img/products/giay-puma-club-nam-trang-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Club Nam - Xanh Navy",
+      "description": "Giày Puma Club có thết kế thời trang cổ điển đặc trưng của Puma, một mẫu giày không bao giờ lỗi mốt, trường tồn với thời gian. Chất liệu da lộn mềm đẹp kết hợp với canvas cao cấp và đế cao su bền bỉ khiến bạn không thể bỏ qua được.",
+      "price": 1390000,
+      "image": "client/assets/img/products/giay-puma-club-nl-nam-navy-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Club NL Nam - Trắng",
+      "description": "Giày Puma Club có thết kế thời trang cổ điển đặc trưng của Puma, một mẫu giày không bao giờ lỗi mốt, trường tồn với thời gian. Chất liệu da lộn mềm đẹp kết hợp với canvas cao cấp và đế cao su bền bỉ khiến bạn không thể bỏ qua được.",
+      "price": 1490000,
+      "image": "client/assets/img/products/giay-puma-club-nl-nam-trang-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Court Pure Nam - Đen Trắng",
+      "description": "Giày Puma Court Pure mẫu giày có thiết kế cổ điển mà tinh tế. Chất liệu da cao cấp và đế cao su bền bỉ chắc chắn sẽ làm hài lòng những khách hàng khó tính nhất. Bạn sẽ luôn yên tâm rằng nó không bao giờ bị lỗi mốt.",
+      "price": 1490000,
+      "image": "client/assets/img/products/giay-puma-court-pure-nam-den-trang-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Court Pure Nam - Trắng",
+      "description": "Giày Puma Court Pure mẫu giày có thiết kế cổ điển mà tinh tế. Chất liệu da cao cấp và đế cao su bền bỉ chắc chắn sẽ làm hài lòng những khách hàng khó tính nhất. Bạn sẽ luôn yên tâm rằng nó không bao giờ bị lỗi mốt.",
+      "price": 1490000,
+      "image": "client/assets/img/products/giay-puma-court-pure-nam-trang-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Electrify Nitro Nam - Xám Đen",
+      "description": "Giày Puma Electrify Nitro một mẫu giày thể thao cho phép bạn vận động và di chuyển cực kỳ linh hoạt, ngoài việc đáp ứng mọi nhu cầu đi lại hàng ngày Puma Electrify Nitro còn là mẫu giày chạy bộ rất tốt với mức giá hợp lý.",
+      "price": 1990000,
+      "image": "client/assets/img/products/giay-puma-electrify-nitro-nam-den-xam-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Ralph Sampson Lo Nam - Trắng Đỏ",
+      "description": "Giày Puma Serve Pro 1948 Team Gold có thết kế thời trang cổ điển lấy cảm hứng từ thập niên 50, một mẫu giày không bao giờ lỗi mốt, trường tồn với thời gian. Giày được làm từ chất liệu da cao cấp của Puma và đế cao su bền bỉ chắc chắn.",
+      "price": 1990000,
+      "image": "client/assets/img/products/giay-puma-palph-sampson-lo-nam-trang-do-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Serve Pro 1948 Team Gold Nam - Trắng",
+      "description": "Giày Puma Smash Buck  mẫu giày có thiết kế đơn giản mà đẹp mắt. Chất liệu da lộn cao cấp làm hài lòng cả những khách hàng khó tính nhất.",
+      "price": 1690000,
+      "image": "client/assets/img/products/giay-puma-serve-pro-1948-team-gold-nam-trang-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Smash Buck Nam - Nâu",
+      "description": "Giày Puma Smash Cat L mẫu giày có thiết kế đơn giản mà đẹp mắt. Logo hình con báo đặc trưng của Puma được thêu tỉ mỉ trên thân giày tạo nét nổi bật khó cưỡng lại.",
+      "price": 1290000,
+      "image": "client/assets/img/products/giay-puma-smash-buck-nam-nau-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Smash Cat L Nam - Trắng Navy",
+      "description": "Giày Puma Smash Cat L mẫu giày có thiết kế đơn giản mà đẹp mắt. Logo hình con báo đặc trưng của Puma được thêu tỉ mỉ trên thân giày tạo nét nổi bật khó cưỡng lại.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-puma-smash-cat-l-nam-trang-navy-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Smash Cat L Nam Nữ - Trắng Đỏ",
+      "description": "Giày Puma Smash Cat L mẫu giày có thiết kế đơn giản mà đẹp mắt. Logo hình con báo đặc trưng của Puma được thêu tỉ mỉ trên thân giày tạo nét nổi bật khó cưỡng lại.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-puma-smash-cat-l-nam-trang-do-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Smash Cat L Nam Nữ - Trắng Xanh",
+      "description": "Giày Puma Smash Cat Perf FS SL mẫu giày có thiết kế cổ điển mà tinh tế. Chất liệu da cao cấp và đế cao su bền bỉ chắc chắn sẽ làm hài lòng những khách hàng khó tính nhất. Bạn sẽ luôn yên tâm rằng nó không bao giờ bị lỗi mốt.",
+      "price": 1790000,
+      "image": "client/assets/img/products/giay-puma-smash-cat-l-nam-nu-trang-xanh-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Smash Cat Perf FS SL Nam Nữ - Trắng Gold",
+      "description": "Giày Puma Smash Cat Perf FS SL mẫu giày có thiết kế cổ điển mà tinh tế. Chất liệu da cao cấp và đế cao su bền bỉ chắc chắn sẽ làm hài lòng những khách hàng khó tính nhất. Bạn sẽ luôn yên tâm rằng nó không bao giờ bị lỗi mốt.",
+      "price": 1190000,
+      "image": "client/assets/img/products/giay-puma-smash-cat-perf-fs-sl-nam-nu-trang-gold-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Smash Cat Perf FS SL Nam Nữ - Trắng Navy",
+      "description": "Giày Puma Softride Cruise là một trong mẫu giày thể thao có có thiết kế đơn giản mà rất tinh tế. Một mẫu giày mà bạn có thế sử dụng trong mọi hoạt động hàng ngày.",
+      "price": 1190000,
+      "image": "client/assets/img/products/giay-puma-smash-cat-perf-fs-sl-nam-nu-trang-navy-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Softride Cruise Nam - Trắng",
+      "description": "Giày Puma Taper có thiết kế rất đẹp cùng với những công nghệ cao cấp của Puma. Với trọng lượng rất nhẹ và bộ đế cực kỳ êm ái Puma Taper mang đến cho người đi cảm giác rất linh hoạt và năng động.",
+      "price": 1490000,
+      "image": "client/assets/img/products/giay-puma-softride-cruise-nam-trang-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Taper Nam - Navy Trắng",
+      "description": "Giày Puma Taper có thiết kế rất đẹp cùng với những công nghệ cao cấp của Puma. Với trọng lượng rất nhẹ và bộ đế cực kỳ êm ái Puma Taper mang đến cho người đi cảm giác rất linh hoạt và năng động.",
+      "price": 1390000,
+      "image": "client/assets/img/products/giay-puma-taper-nam-xanh-navy-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Taper Nam - Trắng",
+      "description": "Giày Puma Taper có thiết kế rất đẹp cùng với những công nghệ cao cấp của Puma. Với trọng lượng rất nhẹ và bộ đế cực kỳ êm ái Puma Taper mang đến cho người đi cảm giác rất linh hoạt và năng động.",
+      "price": 1390000,
+      "image": "client/assets/img/products/giay-puma-taper-nam-trang-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma Taper Nam - Xám",
+      "description": "Giày Puma X Ray Trainers là một trong mẫu giày thể thao có có thiết kế đơn giản mà rất tinh tế. Một mẫu giày mà bạn có thế sử dụng trong mọi hoạt động hàng ngày.",
+      "price": 1390000,
+      "image": "client/assets/img/products/giay-puma-taper-nam-xam-01-500x500.jpg",
+      "brand": 1
+    },
+    {
+      "name": "Giày Puma X Ray Trainers Nam - Trắng",
+      "description": "Giày Puma Ralph Samspon Lo là một trong mẫu giày Classic huyền thoại của Puma. Được làm bằng da mềm mại, cao cấp, sang trọng, đế giày cực kỳ bền đẹp. Đây là một mẫu giày tuyệt vời dành để đi học, đi làm, đi chơi...",
+      "price": 1690000,
+      "image": "client/assets/img/products/giay-puma-x-ray-trainers-nam-trang-01-500x500.jpg",
+      "brand": 1
+    }
+  ]
 }

@@ -1,41 +1,36 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom'
 import axios from "axios";
 import Api from "../../api/Api"
 
-
-
 function ListUser() {
-
     const [user, setUser] = useState();
     const loadData = () => {
         axios.get(Api.AllUser)
             .then(res => setUser(res.data.userData))
             .catch(err => console.log(err))
     }
-    console.log(user)
     useEffect(() => {
         loadData()
     }, [user?.length]);
     return (
-        <div className="content-wrapper">
-            <div className="container-xxl flex-grow-1 container-p-y">
-                <Link to='/dashboard/addCategory'><input type="button" value="Add" /></Link>
-                
-                <input type="button" value="Trash" />
-                {
-                    (user?.length) ? (
-                        <table className="admin-main border w-100">
+        <div className="container-fluid">
+            <div className="card shadow mb-4">
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Danh sách người dùng</h6>
+                </div>
+                <div className="card-body">
+                    <div className="table-responsive">
+                        <table className="table table-bordered" width="100%" cellSpacing={0}>
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Avatar</th>
+                                    <th>Tên</th>
                                     <th>Email</th>
-                                    <th>CreateAt</th>
-                                    <th>UpdateAt</th>
-                                    <th>Act</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Role</th>
+                                    <th>Chức năng</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -45,15 +40,13 @@ function ListUser() {
                                             <tr key={item.id}>
                                                 <td>{item.id}</td>
                                                 <td>{item.name}</td>
-                                                <td>
-                                                    <img src={item.avatar} alt="" />
-                                                </td>
                                                 <td>{item.email}</td>
-                                                <td>{item.createdAt}</td>
-                                                <td>{item.updatedAt}</td>
+                                                <td>{item.phone}</td>
+                                                <td>{item.address}</td>
+                                                <td>{item && item.roleData.value}</td>
                                                 <td>
-                                                    <input type="button" value="Xóa" />
-                                                    <input type="button" value="Sửa" />
+                                                <input style={{margin: '0 10px'}} type="button" value="Xóa" />
+                                                     <input type="button" value="Sửa" />
                                                 </td>
                                             </tr>
                                         )
@@ -61,10 +54,9 @@ function ListUser() {
                                 }
                             </tbody>
                         </table>
-                    ) : null
-                }
+                    </div>
+                </div>
             </div>
-            <div className="content-backdrop fade" />
         </div>
     )
 }

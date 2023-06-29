@@ -43,7 +43,7 @@ export const login = ({email, password}) => new Promise( async(resolve, reject) 
             raw: true
         })
         const isChecked = response && bcrypt.compareSync(password, response.password)
-        const accessToken = isChecked ? jwt.sign({id: response.id, email: response.email, role: response.role}, process.env.JWT_SECRET,{expiresIn: '1d'}):null
+        const accessToken = isChecked ? jwt.sign({id: response.id, email: response.email, role: response.role}, process.env.JWT_SECRET,{expiresIn: '5d'}):null
         const refreshToken = isChecked? jwt.sign({id: response.id}, process.env.JWT_SECRET_FRESH_TOKEN, {expiresIn: '10d'}) :null
         resolve({
             err: accessToken?0:1,

@@ -5,6 +5,8 @@ import { notFound } from '../middlewares/handleError'
 import insert from './insert'
 import brand from './brand'
 import cart from './cart'
+import order from './order'
+import orderdetail from './orderdetail'
 
 const Api = (app) => {
     app.use('/api/v1/user', user)
@@ -13,6 +15,8 @@ const Api = (app) => {
     app.use('/api/v1/insert', insert)
     app.use('/api/v1/brand', brand)
     app.use('/api/v1/cart', cart)
+    app.use('/api/v1/order', order)
+    app.use('/api/v1/orderdetail', orderdetail)
     app.use(notFound)
 }
 

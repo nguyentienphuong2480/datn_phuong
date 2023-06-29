@@ -19,11 +19,3 @@ export const insertBrand = async (req, res)=>{
     }
 }
 
-export const insertProductDetail = async (req, res)=>{
-    try {
-        const response = await services.insertProductDeatil()
-        return res.status(200).json(response)
-    } catch (error) {
-        return internalServerErrol(res)
-    }
-}

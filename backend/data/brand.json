@@ -2,19 +2,19 @@
     "brand": [
         {
             "name": "Puma",
-            "image": " client\/assets\/img\/products\/Puma.png"
+            "image": " client\/assets\/img\/Puma.png"
         },
         {
             "name": "Adidas",
-            "image": " client\/assets\/img\/products\/Adidas.png"
+            "image": " client\/assets\/img\/Adidas.png"
         },
         {
             "name": "Nike",
-            "image": " client\/assets\/img\/products\/Nike.png"
+            "image": " client\/assets\/img\/Nike.png"
         },
         {
             "name": "Lacoste",
-            "image": " client\/assets\/img\/products\/Lacoste.png"
+            "image": " client\/assets\/img\/Lacoste.png"
         }
     ]
 }

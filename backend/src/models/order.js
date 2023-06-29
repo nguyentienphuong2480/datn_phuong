@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Order.belongsTo( models.OrderStatus, {foreignKey:'status', targetKey:'id', as:'statusData'})
     }
   }
   Order.init({
@@ -19,6 +20,10 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true
     },
     customerID: DataTypes.INTEGER,
+    name: DataTypes.STRING,
+    phone: DataTypes.STRING,
+    email: DataTypes.STRING,
+    status: DataTypes.TINYINT,
     deliveryAddress: DataTypes.STRING,
     totalPrice: DataTypes.FLOAT
   }, {

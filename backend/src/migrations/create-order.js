@@ -11,6 +11,15 @@ module.exports = {
       customerID: {
         type: Sequelize.INTEGER
       },
+      name:{
+        type: Sequelize.STRING
+      },
+      phone:{
+        type: Sequelize.STRING
+      },
+      email:{
+        type: Sequelize.STRING
+      },
       deliveryAddress :{
         type: Sequelize.STRING
       },

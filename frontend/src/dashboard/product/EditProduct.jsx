@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import Api from "../../api/Api"
 
@@ -9,24 +9,19 @@ function EditProduct() {
     var checkimg =''
     const navigate = useNavigate()
     const [name, setName] = useState('');
-    const [subcat, setSubcat] = useState();
-    const [avaliable, setAvaliable] = useState();
     const [image, setImage] = useState();
     const [price, setPrice] = useState();
-    const [expiry, setExpiry] = useState('');
     const [brand, setBrand] = useState('');
     const [description, setDescription] = useState('');
-    const [subcategorys, setSubcategorys] = useState();
     const [brands, setBrands] = useState();
+    const [imgSrc, setImgSrc] = useState("");
+
     const HandleSave = () => {
         const data = new FormData()
         data.append('id', id.id)
         data.append('name', name)
-        data.append('subcat', subcat)
-        data.append('avaliable', avaliable)
         if(image!=checkimg){data.append('image', image)}
         data.append('price', price)
-        data.append('expiry', expiry)
         data.append('brand',brand)
         data.append('description', description)
         axios({
@@ -40,10 +35,19 @@ function EditProduct() {
         .then( res=> {
             toast(JSON.stringify(res.data.mes))
             setTimeout(()=>{
-                navigate('/admin/listProduct')
+                navigate('/dashboard/listProduct')
             },2000)
         })
         .catch(err => console.log(err));
+    }
+    function handleOnChange(event) {
+        setImage(event.target.files[0])
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            setImgSrc(reader.result);
+        };
     }
     const loadData = () => {
         axios({
@@ -55,19 +59,14 @@ function EditProduct() {
         })
         .then(res =>{
             setName(res.data.productData.name);
-            setSubcat(res.data.productData.subcat)
-            setAvaliable(res.data.productData.avaliable)
             setImage(res.data.productData.image)
             setPrice(res.data.productData.price)
-            setExpiry(res.data.productData.expiry)
             setBrand(res.data.productData.brand)
             setDescription(res.data.productData.description)
+            setImgSrc(res.data.productData.image)
             checkimg= res.data.productData.image
         })
         .catch(err => console.log(err));
-        axios.get(Api.SubCategory)
-            .then(res => setSubcategorys(res.data.subcategoryData))
-            .catch(err => console.log(err))
         axios.get(Api.Brand)
             .then(res => setBrands(res.data.brandData))
             .catch(err => console.log(err))
@@ -76,49 +75,51 @@ function EditProduct() {
         loadData()
     }, []);
     return (
-        <div className="content-wrapper">
-            <div className="container-xxl flex-grow-1 container-p-y">
-                <div className="admin-main row container-fluit">
-                    <h1 className="text-center">Edit Product</h1>
-                    <label>Name</label>
-                    <input value={name} onChange={e => setName(e.target.value)} className="input-admin" type="text" />
-                    <label>Subcategory</label>
-                    <select value={subcat} defaultValue='default' onChange={e => setSubcat(e.target.value)} className="input-admin">
-                        <option value="default" disabled={true}>Choose subcategory</option>
-                        {
-                            subcategorys?.map(subcat => {
-                                return (
-                                    <option key={subcat.id} value={subcat.id}>{subcat.name}</option>
-                                )
-                            })
-                        }
-                    </select>
-                    <label>Avaliable</label>
-                    <input value={avaliable} onChange={e => setAvaliable(e.target.value)} className="input-admin" type="number" />
-                    <label>Image</label>
-                    <input onChange={e => setImage(e.target.files[0])} className="input-admin" type="file" />
-                    <img className="img-admin" src={image} alt="" />
-                    <label>Price</label>
-                    <input value={price} onChange={e => setPrice(e.target.value)} className="input-admin" type="number" />
-                    <label>Expiry</label>
-                    <input value={expiry} onChange={e => setExpiry(e.target.value)} className="input-admin" type="text" />
-                    <label>Brand</label>
-                    <select value={brand} defaultValue='default' onChange={e => setBrand(e.target.value)} className="input-admin">
-                        <option value="default" disabled={true}>Choose brand</option>
-                        {
-                            brands?.map(brand => {
-                                return (
-                                    <option key={brand.id} value={brand.id}>{brand.name}</option>
-                                )
-                            })
-                        }
-                    </select>
-                    <label>Description</label>
-                    <textarea value={description} onChange={e => setDescription(e.target.value)} cols="30" rows="10"></textarea>
-                    <button onClick={HandleSave} type="submit" className="btn input-admin">Save</button>
+        <div className="container-fluid">
+            <div className="card shadow mb-4">
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Thêm sản phẩm</h6>
+                </div>
+                <div className="card-body">
+                    <form className="user">
+                        <div className="form-group row">
+                            <div className="col-sm-6 mb-3 mb-sm-0">
+                                <input value={name} onChange={e => setName(e.target.value)} type="text" className="form-control " placeholder="Tên sản phẩm" />
+                            </div>
+                            <div className="col-sm-6">
+                                <select value={brand} onChange={e => setBrand(e.target.value)} className="form-control ">
+                                    {/* <option value={brand} disabled={true}>Chọn thương hiệu</option> */}
+                                    {
+                                        brands?.map(item => {
+                                            return (<option key={item.id} value={item.id}>{item.name}</option>)
+                                        })
+                                    }
+
+                                </select>
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <div className="col-sm-6 mb-3 mb-sm-0">
+                                <input value={price} type="number" onChange={e => setPrice(e.target.value)} className="form-control " placeholder="Giá" />
+                            </div>
+                            <div className="col-sm-6">
+                                <input value={description} type="text" onChange={e => setDescription(e.target.value)} className="form-control" placeholder="Mô tả sản phẩm" />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <div className="col-sm-6 mb-3 mb-sm-0">
+                                <label>Hình ảnh</label>
+                                <input type="file" accept="image/*" onChange={handleOnChange} />
+                                {imgSrc && <img className='w-25' src={imgSrc} alt="selected" />}
+                            </div>
+                        </div>
+                        <Link  onClick={HandleSave} className="btn btn-primary btn-block">
+                            Cập nhật
+                        </Link>
+                    </form>
                 </div>
             </div>
-            <ToastContainer />
+            <ToastContainer/>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 
 export default function Header() {
     const navigate = useNavigate()
-    const Logout = () =>{
+    const Logout = () => {
         localStorage.removeItem('accessToken')
         navigate('/')
     }
@@ -42,14 +42,20 @@ export default function Header() {
                             <Link to='/cart' className="nav-icon position-relative text-decoration-none">
                                 <i className="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                             </Link>
-                            <Link className="nav-icon position-relative text-decoration-none">
-                                <i className="fa fa-fw fa-user text-dark mr-3 dropbtn"></i>
+                            <Link className="nav-icon position-relative text-decoration-none dropdown">
+                                <button className="dropbtn">
+                                    <i className="fa fa-fw fa-user text-dark mr-3"></i>
+                                </button>
+                                <div className="dropdown-content">
+                                    {/* <Link>Tài khoản</Link> */}
+                                    <Link to='/myorder'>Đơn hàng của tôi</Link>
+                                </div>
                             </Link>
                             {
-                                !localStorage.accessToken?<Link to='/login' className="nav-icon position-relative text-decoration-none">Đăng nhập | Đăng ký</Link>:
-                                <Link onClick={Logout} className="nav-icon position-relative text-decoration-none">Đăng xuất</Link>
+                                !localStorage.accessToken ? <Link to='/login' className="nav-icon position-relative text-decoration-none">Đăng nhập | Đăng ký</Link> :
+                                    <Link onClick={Logout} className="nav-icon position-relative text-decoration-none">Đăng xuất</Link>
                             }
-                            
+
                         </div>
                     </div>
 

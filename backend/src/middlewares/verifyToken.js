@@ -9,7 +9,7 @@ const verifyToken = (req, res, next) =>{
         if(err){
             const isChecked = err instanceof TokenExpiredError
             if(!isChecked) return notAuth('AccesToken invalid', res, isChecked)
-            if(isChecked) return notAuth('AccesToken expired', res, isChecked)
+            if(isChecked) return notAuth('Phiên bản đã hết hạn. \nVui lòng đăng nhập lại.', res, isChecked)
         }
         
         

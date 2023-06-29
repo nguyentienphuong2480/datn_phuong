@@ -8,6 +8,8 @@ import ProductBrandPage from '../client/page/ProductBrandPage'
 import Login from '../client/orther/Login'
 import Register from '../client/orther/Register'
 import CartPage from '../client/page/CartPage'
+import MyOrderPage from '../client/page/MyOrderPage'
+import MyOrderDetailPage from '../client/page/MyOrderDetailPage'
 import ProductDetailPage from '../client/page/ProductDetailPage'
 
 function ClientRoute() {
@@ -15,13 +17,15 @@ function ClientRoute() {
         <>
             <Search />
             <Routes>
-                <Route path='/' element={<HomePage />} ></Route>
+                <Route exact path='*' element={<HomePage />} ></Route>
                 <Route path='/contact' element={<ContactPage />} ></Route>
                 <Route path='/product' element={<ProductPage />} ></Route>
                 <Route path='/productbrand/:id' element={<ProductBrandPage/>}></Route>
                 <Route path='/login' element={<Login/>}></Route>
                 <Route path='/register' element={<Register/>}></Route>
                 <Route path='/cart' element={<CartPage/>}></Route>
+                <Route path='/myorder' element={<MyOrderPage/>}></Route>
+                <Route path='/myorderdetail/:id' element={<MyOrderDetailPage/>}></Route>
                 <Route path='/productdetail/:id' element={<ProductDetailPage/>}></Route>
             </Routes>
         </>

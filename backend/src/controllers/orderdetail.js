@@ -11,3 +11,24 @@ export const addOrderDetail = async (req, res) =>{
         return internalServerErrol(res)
     }
 }
+
+export const getBestSellers = async (req, res) => {
+    try {
+       
+      const response = await services.getBestSellers();
+      return res.status(200).json(response)
+      
+    } catch (error) {
+        return internalServerErrol(res)
+    }
+  }
+export const getOneOrder = async (req, res) => {
+    try {
+       
+      const response = await services.getOneOrder(req.params.id);
+      return res.status(200).json(response)
+      
+    } catch (error) {
+        return internalServerErrol(res)
+    }
+  }

@@ -4,7 +4,7 @@ export const email = joi.string().pattern(new RegExp('gmail.com$')).required()
 
 export const password = joi.string().min(6).required()
 
-export const id = joi.number().required()
+export const id = joi.required()
 export const name = joi.string().required()
 export const avaliable = joi.number().required()
 export const price = joi.number().required()

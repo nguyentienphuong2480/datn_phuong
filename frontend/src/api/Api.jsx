@@ -14,6 +14,7 @@ class Api{
     static ChangeTrashBrand = this.url + 'brand/trash';
 
     static Product = this.url + "product/";
+    static NewProduct = this.url + "product/new";
     static ProductBrand = (id) => {return this.url + "product/productbrand/" +id};
     static EditProduct = this.url + "product/";
     static AddProduct = this.url + "product/";
@@ -22,8 +23,9 @@ class Api{
     static ProductDetail = (id)=>{return this.url + "product/productdetail/" + id;};
     static ProductCategory = (id)=>{return this.url + "product/productcategory/" + id;};
     static GetOneProduct = (id)=>{return this.url + "product/getOneProduct/" + id;};
+    static Search = (name)=>{return this.url + "product/search/" + name;};
 
-    static Category = this.url + "category/";
+    static AllOrder = this.url + "order/all";
     static AddCategory = this.url + "category/";
     static ChangeTrashCategory = this.url + "category/";
     static TrashCategory = this.url + "category/trash";
@@ -38,6 +40,8 @@ class Api{
 
     static Order = this.url + "order/";
     static OrderDetail = this.url + "orderdetail/";
+    static AllOrderDetail = (id) =>{return this.url + "orderdetail/" +id}
+    static BestSeller = this.url + "orderdetail/bestsellers";
 
 }
 

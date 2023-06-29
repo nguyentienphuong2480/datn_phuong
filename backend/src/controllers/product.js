@@ -23,26 +23,26 @@ export const getProductBrand = async (req, res)=>{
     }
 }
 
-export const getProDetail = async (req, res)=>{
-    try {
-        const id = req.params.id
-        const response = await services.getProductDetail(id)
-        return res.status(200).json(response)
-    } catch (error) {
-        return internalServerErrol(res)
-    }
-}
+// export const getProDetail = async (req, res)=>{
+//     try {
+//         const id = req.params.id
+//         const response = await services.getProductDetail(id)
+//         return res.status(200).json(response)
+//     } catch (error) {
+//         return internalServerErrol(res)
+//     }
+// }
 
 
 export const creataNewProduct = async (req, res)=>{
     try {
         const fileData = req.file
-        const {error} = joi.object({ name, subcat, avaliable, price, expiry, brand, description, image }).validate({...req.body, image: fileData?.path})
+        const {error} = joi.object({ name, price, brand, description, image }).validate({...req.body, image: fileData?.path})
         if (error) {
             if(fileData) cloudinary.uploader.destroy(fileData.filename)
             return badRequest(error.details[0].message, res)
         }
-        const response = await services.creataProduct(req.body, fileData)
+        const response = await services.createProduct(req.body, fileData)
         return res.status(200).json(response)
     } catch (error) {
         return internalServerErrol(res)
@@ -61,7 +61,7 @@ export const getOneProduct = async (req, res) =>{
 export const updateProduct = async (req, res)=>{
     try {
         const fileData = req.file
-        const {error} = joi.object({ id}).validate({id: req.body.id})
+        const {error} = joi.object({id}).validate({id: req.body.id})
         if (error) {
             if(fileData) cloudinary.uploader.destroy(fileData.filename)
             return badRequest(error.details[0].message, res)
@@ -102,6 +102,24 @@ export const deleteProduct = async (req, res)=>{
             return badRequest(error.details[0].message, res)
         }
         const response = await services.deleteProduct(req.query.ids, req.query.filename)
+        return res.status(200).json(response)
+    } catch (error) {
+        return internalServerErrol(res)
+    }
+}
+
+export const searchProductByName = async (req, res)=>{
+    try {
+        const response = await services.searchProductByName(req.params.name)
+        return res.status(200).json(response)
+    } catch (error) {
+        return internalServerErrol(res)
+    }
+}
+
+export const getNewProduct = async (req, res)=>{
+    try {
+        const response = await services.getNewProduct()
         return res.status(200).json(response)
     } catch (error) {
         return internalServerErrol(res)

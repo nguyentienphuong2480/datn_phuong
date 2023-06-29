@@ -47,8 +47,8 @@ export default function Login() {
                   toast('Đăng nhập thành công')
                   setTimeout(() => {
     
-                    (res.data.userData.roleData.code === 'R1') ? navigate('/admin') : navigate('/')
-                  }, 6000)
+                    (res.data.userData.roleData.code === 'R1') ? navigate('/dashboard') : navigate('/')
+                  }, 3000)
     
     
                 })

@@ -1,102 +1,135 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Api from "../../api/Api";
+import { Link } from "react-router-dom";
+import { AddToCart } from "../cart/activiteCart";
+import { ToastContainer } from "react-toastify";
 
 export default function Featured() {
+  const format = Intl.NumberFormat("en");
+  const [bestSellerProducts, setBestSellerProducts] = useState([]);
+  const [newProducts, setNewProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get(Api.BestSeller)
+      .then((res) => setBestSellerProducts(res.data.bestSellerData))
+      .catch((err) => console.log(err));
+    axios.get(Api.NewProduct)
+      .then((res) => setNewProducts(res.data.productData))
+      .catch((err) => console.log(err));
+  }, []);
   return (
-    <section className="bg-light">
-      <div className="container py-5">
-        <div className="row text-center py-3">
-          <div className="col-lg-6 m-auto">
-            <h1 className="h1">Featured Product</h1>
-            <p>
-              Reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100">
-              <a href="shop-single.html">
-                <img
-                  src="./client/assets/img/feature_prod_01.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div className="card-body">
-                <ul className="list-unstyled d-flex justify-content-between">
-                  <li className="text-muted text-right">$240.00</li>
-                </ul>
-                <a
-                  href="shop-single.html"
-                  className="h2 text-decoration-none text-dark"
-                >
-                  Gym Weight
-                </a>
-                <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  in culpa qui officia deserunt.
-                </p>
-                <p className="text-muted">Reviews (24)</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100">
-              <a href="shop-single.html">
-                <img
-                  src="./client/assets/img/feature_prod_02.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div className="card-body">
-                <ul className="list-unstyled d-flex justify-content-between">
-                  <li className="text-muted text-right">$480.00</li>
-                </ul>
-                <a
-                  href="shop-single.html"
-                  className="h2 text-decoration-none text-dark"
-                >
-                  Cloud Nike Shoes
-                </a>
-                <p className="card-text">
-                  Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
-                  vitae pharetra sed, commodo ullamcorper.
-                </p>
-                <p className="text-muted">Reviews (48)</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card h-100">
-              <a href="shop-single.html">
-                <img
-                  src="client/assets/img/products/giay-adidas-adizero-rc-4-wide-nam-den-trang-01-500x500.jpg"
-                  className="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div className="card-body">
-                <ul className="list-unstyled d-flex justify-content-between">
-                  <li className="text-muted text-right">$360.00</li>
-                </ul>
-                <a
-                  href="shop-single.html"
-                  className="h2 text-decoration-none text-dark"
-                >
-                  Summer Addides Shoes
-                </a>
-                <p className="card-text">
-                  Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar
-                  sagittis diam, et scelerisque ipsum lobortis nec.
-                </p>
-                <p className="text-muted">Reviews (74)</p>
-              </div>
-            </div>
+    <div className="container py-5">
+      <h2>Sản phẩm bán chạy</h2>
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="row product">
+            {bestSellerProducts?.map((product) => {
+              return (
+                <div className="col-md-3 item" key={product.productId}>
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img
+                        className="card-img rounded-0 img-fluid"
+                        src={product.productData.image}
+                        alt=""
+                      />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
+                          <li>
+                            <Link
+                              to={"/productdetail/" + product.id}
+                              className="btn btn-success text-white mt-2"
+                            >
+                              <i className="far fa-eye"></i>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              onClick={(e) => AddToCart(e, product.id)}
+                              className="btn btn-success text-white mt-2"
+                            >
+                              <i className="fas fa-cart-plus"></i>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="card-body">
+                      <a
+                        href="shop-single.html"
+                        className="h3 text-decoration-none"
+                      >
+                        {product.productData.name}
+                      </a>
+                      <p className="text-center mb-0">
+                        {format.format(product.productData.price)}
+                        <sup>đ</sup>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-    </section>
+
+      <h2>Sản phẩm mới</h2>
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="row product">
+            {newProducts?.map((product) => {
+              return (
+                <div className="col-md-3 item" key={product.id}>
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img
+                        className="card-img rounded-0 img-fluid"
+                        src={product.image}
+                        alt=""
+                      />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
+                          <li>
+                            <Link
+                              to={"/productdetail/" + product.id}
+                              className="btn btn-success text-white mt-2"
+                            >
+                              <i className="far fa-eye"></i>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              onClick={(e) => AddToCart(e, product.id)}
+                              className="btn btn-success text-white mt-2"
+                            >
+                              <i className="fas fa-cart-plus"></i>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="card-body">
+                      <a
+                        href="shop-single.html"
+                        className="h3 text-decoration-none"
+                      >
+                        {product.name}
+                      </a>
+                      <p className="text-center mb-0">
+                        {format.format(product.price)}
+                        <sup>đ</sup>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <ToastContainer />
+    </div>
   );
 }

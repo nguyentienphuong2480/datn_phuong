@@ -22,10 +22,12 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     brand: DataTypes.INTEGER,
     image: DataTypes.STRING,
+    description: DataTypes.TEXT,
     price: DataTypes.FLOAT,
     trash: DataTypes.TINYINT,
     createdAt: DataTypes.DATE,
-    updatedAt: DataTypes.DATE
+    updatedAt: DataTypes.DATE,
+    filename: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Product',

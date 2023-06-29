@@ -2,6 +2,7 @@ import React from "react"
 import { useEffect, useState } from "react";
 import Api from "../../api/Api"
 import axios from "axios";
+import { Link } from 'react-router-dom' 
 import { ToastContainer, toast } from "react-toastify";
 
 export default function TrashBrand() {
@@ -44,7 +45,7 @@ export default function TrashBrand() {
         };
         axios(config)
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+                // console.log(JSON.stringify(response.data));
                 setTrash(response.data.trashBrand);
             })
             .catch(function (error) {
@@ -55,37 +56,44 @@ export default function TrashBrand() {
     useEffect(() => {
         loadData()
     }, []);
+    console.log(trash)
     return (
-        <div className="content-wrapper">
-            <div className="container-xxl flex-grow-1 container-p-y">
-                {
-                    (trash?.length) ? (
-                        <table className="admin-main border w-100">
+        <div className="container-fluid">
+            <div className="card shadow mb-4">
+                <div className="card-header py-3">
+                    <h6 className="m-0 font-weight-bold text-primary">Danh sách thương hiệu</h6>
+                </div>
+                <div className="card-body">
+                    {(!trash?.length) ? (<div>Thùng rác rỗng</div>):(
+                    <div className="table-responsive">
+                        <table className="table table-bordered" width="100%" cellSpacing={0}>
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Image</th>
-                                    <th>CreateAt</th>
-                                    <th>UpdateAt</th>
-                                    <th>Act</th>
+                                    <th>Tên</th>
+                                    <th className="w-25">Hình ảnh</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Ngày cập nhật</th>
+                                    <th>Chức năng</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {
-                                    trash?.map(cat => {
+                                    trash?.map(item => {
                                         return (
-                                            <tr key={cat.id}>
-                                                <td>{cat.id}</td>
-                                                <td>{cat.name}</td>
+                                            <tr key={item.id}>
+                                                <td>{item.id}</td>
+                                                <td>{item.name}</td>
                                                 <td>
-                                                    <img className="img-admin" src={cat.image} alt="" />
+                                                    <img className="w-50" src={item.image} alt=""/>
                                                 </td>
-                                                <td>{cat.createdAt}</td>
-                                                <td>{cat.updatedAt}</td>
+                                                <td>{item.createdAt}</td>
+                                                <td>{item.updatedAt}</td>
                                                 <td>
-                                                    <input onClick={e => { ChangeTrashBrand(e, cat.id) }} type="button" value="Khôi phục" />
-                                                    <input type="button" value="Xóa" />
+                                                <input style={{margin: '0 10px'}}type="button" value="Xóa" />
+                                                     <Link >
+                                                         <input onClick={e => { ChangeTrashBrand(e, item.id) }}  type="button" value="Khôi phục" />
+                                                     </Link>
                                                 </td>
                                             </tr>
                                         )
@@ -93,11 +101,10 @@ export default function TrashBrand() {
                                 }
                             </tbody>
                         </table>
-                    ) : null
-                }
+                    </div>)}
+                </div>
             </div>
-            <div className="content-backdrop fade" />
-            <ToastContainer />
+            <ToastContainer/>
         </div>
     )
 }

@@ -17,8 +17,7 @@ export default function Banner() {
                             </div>
                             <div className="col-lg-6 mb-0 d-flex align-items-center">
                                 <div className="text-align-left align-self-center">
-                                    <h1 className="h1 text-success"><b>Zay</b> eCommerce</h1>
-                                    <h3 className="h2">Tiny and Perfect eCommerce Template</h3>
+                                    <h1 className="h1 text-success"><b>Nike</b></h1>
                                     <p>
                                     “Impossible is nothing” (Không có gì là không thể) - câu slogan được ra đời vào năm 2004 để chứng minh rằng nhiều vận động viên nổi tiếng trong làng thể thao đã sử dụng sản phẩm của adidas.
                                     </p>
@@ -27,7 +26,7 @@ export default function Banner() {
                         </div>
                     </div>
                 </div>
-                <div className="carousel-item">
+                {/* <div className="carousel-item">
                     <div className="container">
                         <div className="row p-5">
                             <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
@@ -63,7 +62,7 @@ export default function Banner() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <a className="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
                 <i className="fas fa-chevron-left"></i>
