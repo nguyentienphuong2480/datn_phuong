@@ -48,7 +48,7 @@ export default function Login() {
                   setTimeout(() => {
     
                     (res.data.userData.roleData.code === 'R1') ? navigate('/dashboard') : navigate('/')
-                  }, 3000)
+                  }, 1000)
     
     
                 })

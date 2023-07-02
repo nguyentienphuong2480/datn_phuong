@@ -38,7 +38,7 @@ export default function Featured() {
                         <ul className="list-unstyled">
                           <li>
                             <Link
-                              to={"/productdetail/" + product.id}
+                              to={"/productdetail/" + product.productId}
                               className="btn btn-success text-white mt-2"
                             >
                               <i className="far fa-eye"></i>

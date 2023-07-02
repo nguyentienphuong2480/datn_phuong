@@ -28,28 +28,27 @@ export default function Register() {
                 className: 'toast-message'
             })
         else {
-            if (password !== password_confirm)
-                toast.error("Mật khẩu và xác thực mật khẩu không giống nhau", {
-                    position: toast.POSITION.TOP_CENTER,
-                    className: 'toast-message'
-                })
-            if (!validName.test(name))
-                toast.error("Họ tên không hợp lệ", {
-                    position: toast.POSITION.TOP_CENTER,
-                    className: 'toast-message'
-                })
-            if (!validEmail.test(email))
-                toast.error("Email không hợp lệ", {
-                    position: toast.POSITION.TOP_CENTER,
-                    className: 'toast-message'
-                })
-            if (!validPassword.test(password))
-                toast.error("Mật khẩu ít nhất có 6 kí tự và phải có chữ hoa, chữ thường và số", {
-                    position: toast.POSITION.TOP_CENTER,
-                    className: 'toast-message'
-                })
-        }
-        var data = JSON.stringify({
+            // if (password !== password_confirm)
+            //     toast.error("Mật khẩu và xác thực mật khẩu không giống nhau", {
+            //         position: toast.POSITION.TOP_CENTER,
+            //         className: 'toast-message'
+            //     })
+            // if (!validName.test(name))
+            //     toast.error("Họ tên không hợp lệ", {
+            //         position: toast.POSITION.TOP_CENTER,
+            //         className: 'toast-message'
+            //     })
+            // if (!validEmail.test(email))
+            //     toast.error("Email không hợp lệ", {
+            //         position: toast.POSITION.TOP_CENTER,
+            //         className: 'toast-message'
+            //     })
+            // if (!validPassword.test(password))
+            //     toast.error("Mật khẩu ít nhất có 6 kí tự và phải có chữ hoa, chữ thường và số", {
+            //         position: toast.POSITION.TOP_CENTER,
+            //         className: 'toast-message'
+            //     })
+                var data = JSON.stringify({
             "email": email,
             "password": password,
             "name": name
@@ -72,12 +71,14 @@ export default function Register() {
             toast('Đăng ký thành công.\r\nVui lòng đăng nhập lại.');
             setTimeout(()=>{
                 navigate('/login')
-            },6000)
+            },1000)
         }
           })
           .catch(function (error) {
             console.log(error);
           });
+        }
+        
     }
     return (
         <div className='login'>

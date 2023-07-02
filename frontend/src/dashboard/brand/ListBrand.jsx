@@ -74,8 +74,8 @@ function ListBrand() {
                                                 <td>
                                                     <img className="w-50" src={item.image} alt=""/>
                                                 </td>
-                                                <td>{item.createdAt}</td>
-                                                <td>{item.updatedAt}</td>
+                                                <td>{new Date(item.createdAt).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" })}</td>
+                                                <td>{new Date(item.updatedAt).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" })}</td>
                                                 <td>
                                                 <input style={{margin: '0 10px'}} onClick={e => { ChangeTrashBrand(e, item.id) }} type="button" value="Xóa" />
                                                      <Link to={'/dashboard/editBrand/' + item.id}>

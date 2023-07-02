@@ -125,7 +125,7 @@ export const updateProduct = ({ id, ...body }, fileData) => new Promise(async (r
         )
         resolve({
             err: response[0] > 0 ? 0 : 1,
-            mes: response[0] > 0 ? `${response[0]} book updated` : 'Not found book/Cannot update',
+            mes: response[0] > 0 ? `${response[0]} đã cập nhật` : 'Không thể cập nhật',
         })
         if (fileData && response[0] === 0) cloudinary.uploader.destroy(fileData.filename)
     } catch (error) {
@@ -168,7 +168,7 @@ export const changeTrashProduct = (body) => new Promise(async (resolve, reject) 
         )
         resolve({
             err: response ? 0 : 1,
-            mes: trash.trash ? `${body.id} restored` : `${body.id} moved to trash`
+            mes: trash.trash ? `${body.id} đã khôi phục` : `${body.id} đã xoá`
         })
     } catch (error) {
         reject(error)

@@ -146,7 +146,7 @@ export const addBrand = (body, fileData) => new Promise(async (resolve, reject) 
         })
         resolve({
             err: response[1] ? 0 : 1,
-            mes: response[1] ? 'Created' : 'Brand already exists'
+            mes: response[1] ? 'Thêm thành công' : 'Thương hiệu đã tồn tại'
         })
         if(fileData && !response[1]) cloudinary.uploader.destroy(fileData.filename)
     } catch (error) {
@@ -191,7 +191,7 @@ export const editBrand = (body, fileData) => new Promise(async (resolve, reject)
         )
         resolve({
             err: response ? 0 : 1,
-            mes: response ? 'Editted' : 'Brand already exists',
+            mes: response ? 'Đã cập nhật' : 'Brand already exists',
         })
         if(fileData && !response) cloudinary.uploader.destroy(fileData.filename)
     } catch (error) {
@@ -231,7 +231,7 @@ export const changeTrashBrand = (body) => new Promise(async (resolve, reject) =>
         )
         resolve({
             err: response? 0 : 1,
-            mes: trash.trash?`${body.id} restored`:`${body.id} moved to trash`
+            mes: trash.trash?`${body.id} đã khôi phục`:`${body.id} đã chuyển vào thùng rác`
         })
     } catch (error) {
         reject(error)
